@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página dedicada à informações de viagens ao redor do mundo"
+    />
+    <meta name="author" content="Marcio Perusin" />
+    <meta name="keywords" content="webpage, viagens, países, civilizações" />
+    <title>Around</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <vector class="header__vetor">AAAA</vector>
+        <line class="header__line">ssss</line>
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <div class="profile__avatar">
+            <img
+              src=""
+              alt="foto do autor de viagens ao redor do mundo"
+              class="profile__image"
+            />
+          </div>
+
+          <div class="profile__info">
+            <h1 class="profile__title">Jacques Cousteau Explorador</h1>
+            <h2 class="profile__subtitle">Explorador</h2>
+            <button type="button" class="profile__edit-button">
+              <div class="profile__edit-button profile__edit-button_rectangle">
+                <vector
+                  class="profile__edit-button profile__edit-button_vector"
+                ></vector>
+              </div>
+            </button>
+          </div>
+
+          <button class="profile__add-button">
+            <div class="profile__add-button profile__add-button_retangle">
+              <vector
+                class="profile__add-button profile__add-button_vector"
+              ></vector>
+            </div>
+          </button>
+        </section>
+
+        <section class="elements">
+          <ul class="elements__cards">
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+
+            <li class="card">
+              <img src="" alt="" class="card__image" />
+              <p class="card__paragraph"></p>
+              <div class="card__group">
+                <vector class="card__vector"></vector>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="perfil">
+          <form class="perfil__form form">
+            <fieldset class="form__fieldset">
+              <h2 class="perfil__title">Editar perfil</h2>
+              <input
+                type="text"
+                class="form__input form__input_name"
+                id="name"
+                name="name"
+                placeholder="Jacques Cousteau"
+                required
+              />
+
+              <line class="form__line form__line_name"></line>
+
+              <input
+                type="text"
+                class="form__input form__input_act"
+                id="act"
+                name="act"
+                placeholder="Explorador"
+                required
+              />
+
+              <line class="form__line form__line_act"></line>
+            </fieldset>
+
+            <button type="submit">Salvar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">
+          &copy; <span id="year"></span> Around The U.S.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear;
+    </script>
+  </body>
+</html>
