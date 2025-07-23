@@ -103,31 +103,31 @@
           </ul>
         </section>
 
-        <section class="perfil">
-          <form class="perfil__form form">
+        <section class="popup">
+          <form class="popup__form form">
             <fieldset class="form__fieldset">
-              <h2 class="perfil__title">Editar perfil</h2>
+              <h2 class="form__title">Editar perfil</h2>
               <input
                 type="text"
                 class="form__input form__input_name"
                 id="name"
                 name="name"
-                placeholder="Jacques Cousteau"
+                placeholder="Nome"
                 required
               />
 
-              <line class="form__line form__line_name"></line>
+              <line class="form__line"></line>
 
               <input
                 type="text"
                 class="form__input form__input_act"
                 id="act"
                 name="act"
-                placeholder="Explorador"
+                placeholder="Sobre mim"
                 required
               />
 
-              <line class="form__line form__line_act"></line>
+              <line class="form__line"></line>
             </fieldset>
 
             <button type="submit">Salvar</button>
@@ -143,7 +143,7 @@
     </div>
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear;
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
