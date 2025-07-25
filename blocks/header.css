@@ -1,0 +1,303 @@
+/* -------------  bloco header  ------------- */
+
+/* header 1280 */
+
+.header {
+  max-width: 880px;
+  max-height: 74px;
+  margin: 45px 200px 40px;
+  padding: 0;
+}
+
+/* Vector */
+
+.header__vector {
+  max-width: 173px;
+  max-height: 33px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__vector-image {
+  background-image: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line */
+
+.header__line {
+  max-width: 880px;
+  max-height: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  border: 1px solid #545454;
+  margin: 41px 0 0;
+  padding: 0;
+}
+
+/* -------------  breackpoint  ------------- */
+
+/* header 1152 */
+
+@media screen and (max-width: 1152px) {
+  /* Header */
+
+  .header {
+    max-width: 820px;
+    max-height: 72px;
+    margin: 43px 180px 40px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 168px;
+    max-height: 32px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 820px;
+    margin: 39px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 1088px) {
+  /* Header */
+
+  .header {
+    max-width: 780px;
+    max-height: 71px;
+    margin: 42px 160px 40px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 165px;
+    max-height: 31px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 780px;
+    margin: 38px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 1024px) {
+  /* Header */
+
+  .header {
+    max-width: 720px;
+    max-height: 69px;
+    margin: 40px 140px 39px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 155px;
+    max-height: 30px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 720px;
+    margin: 37px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 896px) {
+  /* Header */
+
+  .header {
+    max-width: 670px;
+    max-height: 67px;
+    margin: 39px 100px 39px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 150px;
+    max-height: 28px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 670px;
+    margin: 36px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 768px) {
+  /* Header */
+
+  .header {
+    max-width: 600px;
+    max-height: 65px;
+    margin: 36px 80px 38px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 145px;
+    max-height: 29px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 600px;
+    margin: 36px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 656px) {
+  /* Header */
+
+  .header {
+    max-width: 520px;
+    max-height: 63px;
+    margin: 34px 60px 39px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 140px;
+    max-height: 27px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 520px;
+    margin: 34px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 544px) {
+  /* Header */
+
+  .header {
+    max-width: 420px;
+    max-height: 60px;
+    margin: 32px 40px 40px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 135px;
+    max-height: 26px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 420px;
+    margin: 33px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 432px) {
+  /* Header */
+
+  .header {
+    max-width: 360px;
+    max-height: 58px;
+    margin: 30px 20px 41px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 130px;
+    max-height: 25px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 360px;
+    margin: 32px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 375px) {
+  /* Header */
+
+  .header {
+    max-width: 330px;
+    max-height: 57px;
+    margin: 29px 10px 42px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 128px;
+    max-height: 24px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 330px;
+    margin: 32px 0 0;
+  }
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 320px) {
+  /* Header */
+
+  .header {
+    max-width: 320px;
+    max-height: 56px;
+    margin: 28px 0 42px;
+  }
+
+  /* Vector */
+
+  .header__vector {
+    max-width: 126px;
+    max-height: 24px;
+    margin: 0 auto 0 27px;
+  }
+
+  /* line */
+
+  .header__line {
+    max-width: 320px;
+    margin: 32px 0 0;
+  }
+}
