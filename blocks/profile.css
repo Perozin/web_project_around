@@ -1,0 +1,53 @@
+/* header 1280 */
+
+/* Profile */
+
+.profile {
+  max-width: 880px;
+  max-height: 120px;
+  margin: 40px 200px 0;
+  display: grid;
+  flex-direction: column;
+  column-gap: 5px;
+}
+
+/* Avatar */
+
+.profile__avatar {
+  max-width: 120px;
+  max-height: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__image {
+  width: 100%;
+  height: 100%;
+}
+
+.profile__info {
+}
+
+.profile__name {
+}
+
+.profile__profession {
+}
+
+.profile__edit-button {
+}
+
+.profile__edit-button_rectangle {
+}
+
+.profile__edit-button_vector {
+}
+
+.profile__add-button {
+}
+
+.profile__add-button_retangle {
+}
+
+.profile__add-button_vector {
+}

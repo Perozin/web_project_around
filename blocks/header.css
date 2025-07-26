@@ -5,7 +5,7 @@
 .header {
   max-width: 880px;
   max-height: 74px;
-  margin: 45px 200px 40px;
+  margin: 45px 200px 0;
   padding: 0;
 }
 
@@ -49,7 +49,7 @@
   .header {
     max-width: 820px;
     max-height: 72px;
-    margin: 43px 180px 40px;
+    margin: 43px 180px 0;
   }
 
   /* Vector */
@@ -75,7 +75,7 @@
   .header {
     max-width: 780px;
     max-height: 71px;
-    margin: 42px 160px 40px;
+    margin: 42px 160px 0;
   }
 
   /* Vector */
@@ -101,7 +101,7 @@
   .header {
     max-width: 720px;
     max-height: 69px;
-    margin: 40px 140px 39px;
+    margin: 40px 140px 0;
   }
 
   /* Vector */
@@ -127,7 +127,7 @@
   .header {
     max-width: 670px;
     max-height: 67px;
-    margin: 39px 100px 39px;
+    margin: 39px 100px 0;
   }
 
   /* Vector */
@@ -153,7 +153,7 @@
   .header {
     max-width: 600px;
     max-height: 65px;
-    margin: 36px 80px 38px;
+    margin: 36px 80px 0;
   }
 
   /* Vector */
@@ -179,7 +179,7 @@
   .header {
     max-width: 520px;
     max-height: 63px;
-    margin: 34px 60px 39px;
+    margin: 34px 60px 0;
   }
 
   /* Vector */
@@ -205,7 +205,7 @@
   .header {
     max-width: 420px;
     max-height: 60px;
-    margin: 32px 40px 40px;
+    margin: 32px 40px 0;
   }
 
   /* Vector */
@@ -231,7 +231,7 @@
   .header {
     max-width: 360px;
     max-height: 58px;
-    margin: 30px 20px 41px;
+    margin: 30px 20px 0;
   }
 
   /* Vector */
@@ -257,7 +257,7 @@
   .header {
     max-width: 330px;
     max-height: 57px;
-    margin: 29px 10px 42px;
+    margin: 29px 10px 0;
   }
 
   /* Vector */
@@ -276,6 +276,8 @@
 }
 
 /* -------------  breackpoint  ------------- */
+
+/* Header 320 */
 
 @media screen and (max-width: 320px) {
   /* Header */
