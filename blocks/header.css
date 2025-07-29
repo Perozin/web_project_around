@@ -1,6 +1,6 @@
 /* -------------  bloco header  ------------- */
 
-/* header 1280 */
+/* 1280 */
 
 .header {
   max-width: 880px;
@@ -41,185 +41,185 @@
 
 /* -------------  breackpoint  ------------- */
 
-/* header 1152 */
+/* 1152 */
 
 @media screen and (max-width: 1152px) {
   /* Header */
 
   .header {
-    max-width: 820px;
-    max-height: 72px;
-    margin: 43px 180px 0;
+    max-width: 792px;
+    max-height: 66.6px;
+    margin: 40.5px 180px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 168px;
-    max-height: 32px;
+    max-width: 155.7px;
+    max-height: 27.9px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 820px;
-    margin: 39px 0 0;
+    max-width: 792px;
+    margin: 36.9px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 1088 */
 
 @media screen and (max-width: 1088px) {
   /* Header */
 
   .header {
-    max-width: 780px;
-    max-height: 71px;
-    margin: 42px 160px 0;
+    max-width: 747.96px;
+    max-height: 62.89px;
+    margin: 38.24px 169.99px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 165px;
-    max-height: 31px;
+    max-width: 147.04px;
+    max-height: 26.34px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 780px;
-    margin: 38px 0 0;
+    max-width: 747.96px;
+    margin: 34.84px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 1024 */
 
 @media screen and (max-width: 1024px) {
   /* Header */
 
   .header {
-    max-width: 720px;
-    max-height: 69px;
-    margin: 40px 140px 0;
+    max-width: 703.9px;
+    max-height: 59.18px;
+    margin: 35.98px 159.97px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 155px;
-    max-height: 30px;
+    max-width: 138.37px;
+    max-height: 24.78px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 720px;
-    margin: 37px 0 0;
+    max-width: 703.9px;
+    margin: 32.78px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 896 */
 
 @media screen and (max-width: 896px) {
   /* Header */
 
   .header {
-    max-width: 670px;
-    max-height: 67px;
-    margin: 39px 100px 0;
+    max-width: 615.91px;
+    max-height: 51.78px;
+    margin: 31.48px 139.97px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 150px;
-    max-height: 28px;
+    max-width: 121.07px;
+    max-height: 21.68px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 670px;
-    margin: 36px 0 0;
+    max-width: 615.91px;
+    margin: 28.68px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 768 */
 
 @media screen and (max-width: 768px) {
   /* Header */
 
   .header {
-    max-width: 600px;
-    max-height: 65px;
-    margin: 36px 80px 0;
+    max-width: 527.89px;
+    max-height: 44.38px;
+    margin: 26.98px 119.96px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 145px;
-    max-height: 29px;
+    max-width: 103.76px;
+    max-height: 18.58px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 600px;
-    margin: 36px 0 0;
+    max-width: 527.89px;
+    margin: 24.58px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 656 */
 
 @media screen and (max-width: 656px) {
   /* Header */
 
   .header {
-    max-width: 520px;
-    max-height: 63px;
-    margin: 34px 60px 0;
+    max-width: 450.87px;
+    max-height: 37.9px;
+    margin: 23.04px 102.45px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 140px;
-    max-height: 27px;
+    max-width: 88.62px;
+    max-height: 15.86px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 520px;
-    margin: 34px 0 0;
+    max-width: 450.87px;
+    margin: 20.99px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 544 */
 
 @media screen and (max-width: 544px) {
   /* Header */
 
   .header {
-    max-width: 420px;
-    max-height: 60px;
-    margin: 32px 40px 0;
+    max-width: 373.86px;
+    max-height: 31.42px;
+    margin: 19.1px 84.95px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 135px;
-    max-height: 26px;
+    max-width: 73.48px;
+    max-height: 13.15px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 420px;
-    margin: 33px 0 0;
+    max-width: 373.86px;
+    margin: 17.4px 0 0;
   }
 }
 
@@ -229,27 +229,27 @@
   /* Header */
 
   .header {
-    max-width: 360px;
-    max-height: 58px;
-    margin: 30px 20px 0;
+    max-width: 296.88px;
+    max-height: 24.95px;
+    margin: 15.16px 67.45px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 130px;
-    max-height: 25px;
+    max-width: 58.35px;
+    max-height: 10.44px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 360px;
-    margin: 32px 0 0;
+    max-width: 296.88px;
+    margin: 13.81px 0 0;
   }
 }
 
-/* -------------  breackpoint  ------------- */
+/* 375 */
 
 @media screen and (max-width: 375px) {
   /* Header */
@@ -275,9 +275,7 @@
   }
 }
 
-/* -------------  breackpoint  ------------- */
-
-/* Header 320 */
+/* 320 */
 
 @media screen and (max-width: 320px) {
   /* Header */
