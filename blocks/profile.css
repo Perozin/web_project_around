@@ -1,4 +1,4 @@
-/* 1280 */
+/* -------------  1280  ------------- */
 
 /* profile */
 
@@ -126,16 +126,14 @@
 /* add-button-vector */
 
 .profile__add-button_vector {
-  height: 22px;
+  max-height: 22px;
   background-image: #ffffff;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* -------------  breackpoint  ------------- */
-
-/* 1152px */
+/* -------------  1152 ------------- */
 
 @media screen and (max-width: 1152px) {
   /* profile */
@@ -209,102 +207,102 @@
   /* add-button */
 
   .profile__add-button {
-    max-width: 98.41px;
-    max-height: 32.08px;
+    max-width: 135px;
+    max-height: 45.81px;
   }
 
   /* add-button-vector */
 
   .profile__add-button_vector {
-    max-height: 14.43px;
+    max-height: 19.8px;
   }
 }
 
-/* 1088px */
+/* -------------  1088------------- */
 
 @media screen and (max-width: 1088px) {
   /* profile */
 
   .profile {
-    max-width: 760px;
-    max-height: 105px;
-    margin: 34px 0 0;
+    max-width: 747.96px;
+    max-height: 101.99px;
+    margin: 33.99px 0 0;
   }
 
   /* avatar */
 
   .profile__image {
-    max-width: 145.59px;
-    max-height: 110.06px;
-    margin: -3.23px 0 -3.23px -19.42px;
+    max-width: 143.42px;
+    max-height: 108.36px;
+    margin: -3.18px 0 -3.05px -19.12px;
   }
 
   /* elipse */
 
   .profile__elipse {
-    max-width: 104px;
-    max-height: 104px;
-    margin: 3.23px 22.67px 3.23px 19.42px;
+    max-width: 101.99px;
+    max-height: 101.99px;
+    margin: 3.18px 22.3px 3.18px 19.12px;
   }
 
   /* content-info */
 
   .profile__info {
-    max-width: 358px;
-    max-height: 66.7px;
-    margin: 18.9px auto 17.8px 3.23px;
+    max-width: 352.73px;
+    max-height: 65.44px;
+    margin: 18.69px auto 17.84px 3.18px;
   }
 
   /* name */
 
   .profile__name {
-    max-width: 322px;
-    max-height: 33.7px;
-    font-size: 36px;
-    line-height: 41.1px;
+    max-width: 317, 03px;
+    max-height: 33.06px;
+    font-size: 35.69px;
+    line-height: 40.79px;
   }
 
   /* edit-button */
 
   .profile__edit-button {
-    max-width: 20.5px;
-    max-height: 20.5px;
-    margin: 12.8px 0 0 15.4px;
+    max-width: 20.39px;
+    max-height: 20.39px;
+    margin: 12.74px 0 0 15.29px;
   }
 
   /* edit-button-vector */
 
   .profile__edit-button-vector {
-    max-width: 8.5px;
-    max-height: 8.5px;
-    margin: 5px;
+    max-width: 8.49px;
+    max-height: 8.49px;
+    margin: 5.09px;
   }
 
   /* profession */
 
   .profile__profession {
-    max-width: 358px;
-    max-height: 18.9px;
-    font-size: 15.4px;
-    line-height: 18.9px;
-    margin: 13.7px auto 0 0;
+    max-width: 352, 73px;
+    max-height: 18.69px;
+    font-size: 15.29px;
+    line-height: 18.69px;
+    margin: 13.59px auto 0 0;
   }
 
   /* add-button */
 
   .profile__add-button {
-    max-width: 64.56px;
-    max-height: 21.01px;
+    max-width: 72.5px;
+    max-height: 43.23px;
   }
 
   /* add-button-vector */
 
   .profile__add-button_vector {
-    max-height: 9.46px;
+    max-height: 18.69px;
   }
 }
 
-/* 1024px */
+/* -------------  1024  ------------- */
 
 @media screen and (max-width: 1024px) {
   /* profile */
@@ -388,7 +386,7 @@
   }
 }
 
-/*  896 */
+/* -------------  896 ------------- */
 
 @media screen and (max-width: 896px) {
   /* profile */
@@ -472,7 +470,7 @@
   }
 }
 
-/* 768 */
+/* -------------  768 ------------- */
 
 @media screen and (max-width: 768px) {
   /* profile */
@@ -557,7 +555,7 @@
   }
 }
 
-/* 656 */
+/* -------------  656  ------------- */
 
 @media screen and (max-width: 656px) {
   /* profile */
@@ -642,9 +640,7 @@
   }
 }
 
-/* 544px */
-
-/* 544 */
+/* -------------  544  ------------- */
 
 @media screen and (max-width: 544px) {
   /* profile */
@@ -729,7 +725,7 @@
   }
 }
 
-/* 432 */
+/* -------------  432  ------------- */
 
 @media screen and (max-width: 432px) {
   /* profile */
@@ -814,7 +810,7 @@
   }
 }
 
-/* 375 — segue estilo da 320 */
+/* -------------  375  ------------- */
 
 @media screen and (max-width: 375px) {
   /* profile */
@@ -901,7 +897,7 @@
   }
 }
 
-/* 320 */
+/* -------------  320  ------------- */
 
 @media screen and (max-width: 320px) {
   /* profile */
