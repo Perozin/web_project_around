@@ -8,20 +8,20 @@
 
 /* -------------  1152 ------------- */
 
-/* 1152px */
 @media screen and (max-width: 1152px) {
   .content {
     max-width: 792px;
-    margin: 36px 180px 0;
+    margin: 32.4px 180px 0;
     padding: 0;
   }
 }
 
-/* 1088px */
+/* -------------  1088------------- */
+
 @media screen and (max-width: 1088px) {
   .content {
-    max-width: 750px;
-    margin: 36px 160px 0;
+    max-width: 747.96px;
+    margin: 30.59px 169.99px 0;
     padding: 0;
   }
 }
@@ -30,8 +30,8 @@
 
 @media screen and (max-width: 1024px) {
   .content {
-    max-width: 707px;
-    margin: 34px 146px 0;
+    max-width: 703.9px;
+    margin: 28.78px 159.97px 0;
     padding: 0;
   }
 }
@@ -40,8 +40,8 @@
 
 @media screen and (max-width: 896px) {
   .content {
-    max-width: 618px;
-    margin: 30px 120px 0;
+    max-width: 627.18px;
+    margin: 30px 0 0;
     padding: 0;
   }
 }
@@ -50,8 +50,8 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    max-width: 528px;
-    margin: 26px 94px 0;
+    max-width: 460.79px;
+    margin: 26px 0 0;
     padding: 0;
   }
 }
@@ -60,8 +60,8 @@
 
 @media screen and (max-width: 656px) {
   .content {
-    max-width: 480px;
-    margin: 24px 83px 0;
+    max-width: 360px;
+    margin: 24px 0 0;
   }
 }
 
@@ -69,8 +69,8 @@
 
 @media screen and (max-width: 544px) {
   .content {
-    max-width: 430px;
-    margin: 22px 72px 0;
+    max-width: 350px;
+    margin: 22px 0 0;
     padding: 0;
   }
 }
@@ -79,8 +79,8 @@
 
 @media screen and (max-width: 432px) {
   .content {
-    max-width: 350px;
-    margin: 18px 52px 0;
+    max-width: 340px;
+    margin: 18px 0 0;
     padding: 0;
   }
 }
@@ -89,8 +89,8 @@
 
 @media screen and (max-width: 375px) {
   .content {
-    max-width: 282px;
-    margin: 42px 19px 0;
+    max-width: 330px;
+    margin: 42px 0 0;
     padding: 0;
   }
 }
