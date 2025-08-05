@@ -123,23 +123,23 @@
   /* header */
 
   .header {
-    max-width: 627.18px;
-    max-height: 62px;
-    margin: 36px 0 0;
+    max-width: 615.91px;
+    max-height: 51.78px;
+    margin: 31.48px 0 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 134px;
-    max-height: 29px;
+    max-width: 121.07px;
+    max-height: 21.68px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 627.18px;
-    margin: 37px 0 0;
+    max-width: 615.91px;
+    margin: 28.68px 0 0;
   }
 }
 
@@ -149,23 +149,23 @@
   /* Header */
 
   .header {
-    max-width: 460.79px;
-    max-height: 60px;
-    margin: 34px 0 0;
+    max-width: 527.89px;
+    max-height: 44.38px;
+    margin: 26.98px 0 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 132px;
-    max-height: 27px;
+    max-width: 103.76px;
+    max-height: 18.58px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 460.99px;
-    margin: 35px 0 0;
+    max-width: 527.89px;
+    margin: 22.86px 0 0;
   }
 }
 
@@ -175,23 +175,23 @@
   /* Header */
 
   .header {
-    max-width: 360px;
-    max-height: 58px;
-    margin: 32px 0 0;
+    max-width: 450.87px;
+    max-height: 37.9px;
+    margin: 23.04px 0 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 130px;
-    max-height: 25px;
+    max-width: 88.63px;
+    max-height: 15.86px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 360px;
-    margin: 33px 0 0;
+    max-width: 450.87px;
+    margin: 19.52px 0 0;
   }
 }
 
@@ -201,23 +201,25 @@
   /* Header */
 
   .header {
-    max-width: 350px;
-    max-height: 58px;
-    margin: 30px 0 0;
+    max-width: 475.82px;
+    max-height: 94.48px;
+    margin: 47.23px 5.08px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 130px;
-    max-height: 25px;
+    max-width: 212.6px;
+    max-height: 40.48px;
+    margin: 0 auto 0 45.53px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 350px;
-    margin: 33px 0 0;
+    max-width: 475.82px;
+    box-sizing: border-box;
+    margin: 53.95px 0 0;
   }
 }
 
@@ -227,23 +229,25 @@
   /* Header */
 
   .header {
-    max-width: 340px;
-    max-height: 58px;
-    margin: 30px 0 0;
+    max-width: 380.66px;
+    max-height: 75.59px;
+    margin: 37.79px 4.07px 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 130px;
-    max-height: 25px;
+    max-width: 170.08px;
+    max-height: 32.39px;
+    margin: 0 auto 0 36.43px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 340px;
-    margin: 33px 0 0;
+    max-width: 380.66px;
+    box-sizing: border-box;
+    margin: 43.18px 0 0;
   }
 }
 
@@ -253,23 +257,26 @@
   /* Header */
 
   .header {
-    max-width: 330px;
-    max-height: 57px;
-    margin: 29px 0 0;
+    max-width: 330.44px;
+    max-height: 65.62px;
+    width: 100%;
+    margin: 32.81px auto 0;
   }
 
   /* Vector */
 
   .header__vector {
-    max-width: 128px;
-    max-height: 24px;
+    max-width: 147.64px;
+    max-height: 28.12px;
+    margin: 0 auto 0 31.63px;
   }
 
   /* line */
 
   .header__line {
-    max-width: 330px;
-    margin: 32px 0 0;
+    max-width: 330.44px;
+    box-sizing: border-box;
+    margin: 37.49px 0 0;
   }
 }
 
@@ -281,6 +288,7 @@
   .header {
     max-width: 320px;
     max-height: 56px;
+    width: 100%;
     margin: 28px 0 0;
   }
 
@@ -296,6 +304,7 @@
 
   .header__line {
     max-width: 320px;
+    box-sizing: border-box;
     margin: 32px 0 0;
   }
 }
