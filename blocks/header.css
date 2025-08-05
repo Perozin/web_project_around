@@ -125,7 +125,7 @@
   .header {
     max-width: 615.91px;
     max-height: 51.78px;
-    margin: 31.48px 0 0;
+    margin: 31.48px 5.641px 0;
   }
 
   /* Vector */
@@ -177,7 +177,7 @@
   .header {
     max-width: 450.87px;
     max-height: 37.9px;
-    margin: 23.04px 0 0;
+    margin: 23.04px 4.16px 0;
   }
 
   /* Vector */
@@ -276,7 +276,7 @@
   .header__line {
     max-width: 330.44px;
     box-sizing: border-box;
-    margin: 37.49px 0 0;
+    margin: 37.49px auto 0;
   }
 }
 

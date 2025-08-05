@@ -77,7 +77,7 @@
 @media screen and (max-width: 432px) {
   .content {
     max-width: 380.66px;
-    margin: 56.68px 0 0;
+    margin: 56.68px 4.07px 0;
     padding: 0;
   }
 }
@@ -87,7 +87,7 @@
 @media screen and (max-width: 375px) {
   .content {
     max-width: 330.44px;
-    margin: 49.21px 0 0;
+    margin: 49.21px 3.53px 0;
     padding: 0;
   }
 }
