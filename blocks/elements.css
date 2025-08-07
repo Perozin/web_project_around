@@ -14,10 +14,10 @@
   max-width: 880px;
   max-height: 743px;
   width: 100%;
+  height: 100%;
   list-style-type: none;
   box-sizing: border-box;
   display: grid;
-  flex-direction: row;
   grid-template-columns: repeat(3, 1f);
   grid-template-areas:
     "valey lake mountain"
@@ -31,46 +31,181 @@
 /* -------------  1152 ------------- */
 
 @media screen and (max-width: 1152px) {
+  /* elements */
+
+  .elements {
+    max-width: 792px;
+    max-height: 668.7px;
+    margin: 45px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 792px;
+    max-height: 668.7px;
+    row-gap: 18px;
+    column-gap: 15.3px;
+  }
 }
 
 /* -------------  1088------------- */
 
 @media screen and (max-width: 1088px) {
+  /* elements */
+
+  .elements {
+    max-width: 747.96px;
+    max-height: 631.52px;
+    margin: 42.49px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 747.96px;
+    max-height: 631.52px;
+    row-gap: 16.92px;
+    column-gap: 14.44px;
+  }
 }
 
 /* -------------  1024  ------------- */
 
 @media screen and (max-width: 1024px) {
+  /* elements */
+
+  .elements {
+    max-width: 703.9px;
+    max-height: 594.32px;
+    margin: 39.98px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 703.9px;
+    max-height: 594.32px;
+    row-gap: 15.92px;
+    column-gap: 13.58px;
+  }
 }
 
 /* -------------  896 ------------- */
 
 @media screen and (max-width: 896px) {
+  /* elements */
+
+  .elements {
+    max-width: 615.91px;
+    max-height: 520.03px;
+    margin: 34.98px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 615.91px;
+    max-height: 520.03px;
+    row-gap: 13.93px;
+    column-gap: 11.88px;
+  }
 }
 
 /* -------------  768 ------------- */
-
 @media screen and (max-width: 768px) {
+  /* elements */
+
+  .elements {
+    max-width: 527.89px;
+    max-height: 5397.51px;
+    margin: 85.71px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 527.89px;
+    max-height: 5397.51px;
+    grid-template-columns: repeat(2, 1f);
+    grid-template-areas:
+      "valey lake"
+      "mountain alps"
+      "park province";
+    row-gap: 39.04px;
+    column-gap: 33.92px;
+  }
 }
 
 /* -------------  656  ------------- */
 
 @media screen and (max-width: 656px) {
+  /* elements */
+
+  .elements {
+    max-width: 450.87px;
+    max-height: 4610.5px;
+    margin: 73.22px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 450.87px;
+    max-height: 4610.5px;
+    row-gap: 33.35px;
+    column-gap: 28.98px;
+  }
 }
 
 /* -------------  544  ------------- */
 
 @media screen and (max-width: 544px) {
+  /* elements */
+
+  .elements {
+    max-width: 475.82px;
+    max-height: 3823.61px;
+    margin: 60.73px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 475.82px;
+    max-height: 3823.61x;
+    grid-template-columns: 1f;
+    grid-template-areas:
+      "valey"
+      "lake"
+      "mountain"
+      "alps"
+      "park"
+      "province";
+    row-gap: 29.32px;
+  }
 }
 
 /* -------------  432  ------------- */
 
 @media screen and (max-width: 432px) {
+  /* elements */
+
+  .elements {
+    max-width: 380.66px;
+    max-height: 3058.89px;
+    margin: 48.59px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 380.66px;
+    max-height: 3058.89px;
+    row-gap: 23.46px;
+  }
 }
 
 /* -------------  375  ------------- */
 
 @media screen and (max-width: 375px) {
+  /* elements */
+
+  .elements {
+    max-width: 330.44px;
+    max-height: 2655.29px;
+    margin: 42.18px 0 0;
+  }
+
+  .elements__cards {
+    max-width: 330.44px;
+    max-height: 2655.29px;
+    row-gap: 23.46px;
+  }
 }
 
 /* -------------  320  ------------- */
@@ -81,29 +216,12 @@
   .elements {
     max-width: 282px;
     max-height: 2266px;
-    box-sizing: border-box;
-    margin: 36px 19 0;
-    padding: 0;
+    margin: 36px 0 0;
   }
 
   .elements__cards {
     max-width: 282px;
     max-height: 2266px;
-    width: 100%;
-    list-style-type: none;
-    box-sizing: border-box;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1f;
-    grid-template-areas:
-      "valey"
-      "lake"
-      "mountain"
-      "alps"
-      "park"
-      "province";
     row-gap: 20px;
-    margin: 0;
-    padding: 0;
   }
 }
