@@ -1,0 +1,271 @@
+/* -------------  page  ------------- */
+
+/* edit form */
+
+.popup {
+  max-width: 1280px;
+  max-height: 750px;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  /* display: none; */
+  position: fixed;
+  top: 0;
+}
+
+/* popup */
+
+.popup__form {
+  max-width: 430px;
+  max-height: 330px;
+  position: fixed;
+  top: 50px;
+}
+
+/* close-icon */
+
+.popup__form-close-icon {
+  max-width: 40px;
+  max-height: 40px;
+  background-image: #ffffff;
+  background-color: #000000;
+  /* transform: rotate(-45deg); */
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+/* form */
+
+.form {
+  max-width: 430px;
+  max-height: 330px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* fieldset */
+
+.form__fieldset {
+  max-width: 430px;
+  max-height: 330px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-areas:
+    "title"
+    "input"
+    "button";
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* title */
+
+.form__title {
+  grid-area: "title";
+  max-width: 330px;
+  max-height: 23px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 34px auto 0 36px;
+  padding: 0;
+}
+
+/* input */
+
+.form__input {
+  max-width: 358px;
+  max-height: 84.04px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "activity";
+  box-sizing: border-box;
+  margin: 54px auto 0;
+  padding: 0;
+}
+
+/* name */
+
+.form__input-name {
+  grid-area: "name";
+  width: 358px;
+  height: 27.26px;
+  width: 100%;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.form__input-name_text {
+  max-height: 14px;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin: 0;
+  padding: 0 0 13.26px;
+}
+
+/* line 1 */
+
+.form__input-name_line {
+  max-height: 0px;
+  width: 100%;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  outline: none;
+  overflow: hidden;
+  margin: 0 0 29.74px;
+  padding: 0;
+}
+
+/* activity */
+
+.form__input-activity {
+  grid-area: "activity";
+  width: 358px;
+  height: 27.34px;
+  margin: 0;
+  padding: 0;
+}
+
+.form__input-activity_text {
+  max-height: 14px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0 0 13.34px;
+}
+
+/* line 2 */
+
+.form__input-activity_line {
+  max-height: 0px;
+  width: 100%;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* submit button */
+
+.form__submit-button {
+  max-width: 358px;
+  max-height: 50.15px;
+  margin: 48px 36px 36.51px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+/* Save */
+
+.form__submit-button-text {
+  max-width: 109px;
+  max-height: 18px;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  margin: 13.66px 124px 18.49px 125px;
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 1152px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 1088px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 896px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 768px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 656px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 544px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 432px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 375px) {
+}
+
+/* -------------  breackpoint  ------------- */
+
+@media screen and (max-width: 320px) {
+  /* edit form */
+
+  .popup {
+    max-width: 320px;
+    max-height: 568px;
+    background: #000000;
+  }
+}

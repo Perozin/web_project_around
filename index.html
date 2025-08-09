@@ -219,32 +219,51 @@
 
       <section class="popup">
         <form class="popup__form form">
+          <img
+            src="./images/Close-Icon.png"
+            alt="Image de ícone em formato de X para fechar o popup"
+            class="popup__form-close-icon"
+          />
           <fieldset class="form__fieldset">
             <h2 class="form__title">Editar perfil</h2>
-            <input
-              type="text"
-              class="form__input form__input_name"
-              id="name"
-              name="name"
-              placeholder="Nome"
-              required
-            />
+            <div class="form__input">
+              <input
+                type="text"
+                class="form__input-name form__input-name_text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                required
+              />
 
-            <line class="form__line"></line>
+              <img
+                src="./images/Line-2.png"
+                alt="linha semi transparente que divide os input do form"
+                class="form__input-name form__input-name_line"
+              />
 
-            <input
-              type="text"
-              class="form__input form__input_act"
-              id="act"
-              name="act"
-              placeholder="Sobre mim"
-              required
-            />
+              <input
+                type="text"
+                class="form__input-activity form__input-activity_text"
+                id="act"
+                name="act"
+                placeholder="Sobre mim"
+                required
+              />
 
-            <line class="form__line"></line>
+              <img
+                src="./images/Line-2.1.png"
+                alt="linha semi transparente que divide os input do form"
+                class="form__input-activity form__input-activity_line"
+              />
+            </div>
+
+            <div class="form__submit-button">
+              <button type="submit" class="form__submit-button-text">
+                Salvar
+              </button>
+            </div>
           </fieldset>
-
-          <button type="submit">Salvar</button>
         </form>
       </section>
     </div>
