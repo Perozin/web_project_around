@@ -1,30 +1,46 @@
-/* -------------  page  ------------- */
+/* -------------  1280  ------------- */
 
-/* edit form */
+/* modal */
 
 .popup {
   max-width: 1280px;
   max-height: 750px;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
-  /* display: none; */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
   position: fixed;
   top: 0;
 }
 
-.popup_is-opned {
+.popup_is-opened {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
-/* popup */
+.popup_is-opened::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* form */
 
 .popup__form {
   max-width: 430px;
   max-height: 330px;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
 }
 
 /* close-icon */
@@ -34,8 +50,8 @@
   max-height: 40px;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  /* transform: rotate(-45deg); */
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 3;
   border: none;
   position: absolute;
   top: -40px;
@@ -43,28 +59,32 @@
 }
 
 .form__button-close:hover {
-  background-color: rgba(100, 100, 100, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 .form__button-close_icon {
   background-image: #ffffff;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 4;
   border: none;
 }
 
 .form__button-close_icon:hover {
-  background-color: rgba(100, 100, 100, 0.3);
+  background-image: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+  align-items: center;
   cursor: pointer;
 }
 
-/* form */
+/* container */
 
 .form {
   max-width: 430px;
   max-height: 330px;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   margin: 0;
   padding: 0;
 }
@@ -138,6 +158,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* text */
 
 .form__input-name_text {
   max-height: 14px;
@@ -217,7 +239,9 @@
   border-radius: 2px;
 }
 
-/* Save */
+.form__submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
 .form__submit-button-text {
   max-width: 109px;
@@ -231,8 +255,15 @@
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  cursor: pointer;
   border: none;
   margin: 13.66px 124px 18.49px 125px;
+}
+
+.form__submit-button-text:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+  border: none;
 }
 
 /* -------------  breackpoint  ------------- */
@@ -280,14 +311,118 @@
 @media screen and (max-width: 375px) {
 }
 
-/* -------------  breackpoint  ------------- */
+/* -------------  320  ------------- */
 
 @media screen and (max-width: 320px) {
-  /* edit form */
+  /* modal */
 
   .popup {
     max-width: 320px;
     max-height: 568px;
-    background: #000000;
+  }
+
+  /* form */
+
+  .popup__form {
+    max-width: 282px;
+    max-height: 322px;
+    margin: 123px 19px;
+  }
+
+  /* close-icon */
+
+  .form__button-close {
+    max-width: 26px;
+    max-height: 26px;
+    top: -50px;
+    right: 6px;
+  }
+
+  /* container */
+
+  .form {
+    max-width: 282px;
+    max-height: 322px;
+  }
+
+  /* fieldset */
+
+  .form__fieldset {
+    max-width: 282px;
+    max-height: 322px;
+  }
+
+  /* title */
+
+  .form__title {
+    max-width: 238px;
+    max-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 25px 22px 0;
+  }
+
+  /* input */
+
+  .form__input {
+    max-width: 238px;
+    max-height: 82px;
+    margin: 76px auto 0;
+  }
+
+  /* name */
+
+  .form__input-name {
+    width: 238px;
+    height: 26px;
+  }
+
+  /* text */
+
+  .form__input-name_text {
+    max-height: 17px;
+    margin: 0;
+    padding: 0 0 9px;
+  }
+
+  /* line 1 */
+
+  .form__input-name_line {
+    max-height: 0px;
+    margin: 0 0 30px;
+  }
+
+  /* activity */
+
+  .form__input-activity {
+    width: 238px;
+    height: 26px;
+  }
+
+  .form__input-activity_text {
+    max-height: 17px;
+    padding: 0 0 9px;
+  }
+
+  /* line 2 */
+
+  .form__input-activity_line {
+    max-height: 0px;
+  }
+
+  /* submit button */
+
+  .form__submit-button {
+    max-width: 238px;
+    max-height: 46px;
+    margin: 46px 22px 25px;
+  }
+
+  .form__submit-button-text {
+    max-width: 46px;
+    max-height: 18px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 14px 96px;
   }
 }

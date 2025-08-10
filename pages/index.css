@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+@import url(../scripts/index.js);
 
 @import url(../blocks/root.css);
 @import url(../blocks/page.css);
