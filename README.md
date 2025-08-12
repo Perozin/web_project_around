@@ -40,6 +40,23 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 
 ---
 
+## 🛠️ Mode of Interaction
+
+- Passe o mouse sobre o ícone em forma de lápis no perfil do usuário (o cursor do mouse é alterado)
+- Clique no ícone em forma de lápis
+- Um formulário é aberto, trazendo do perfil do usuário para o formulário o nome e a atividade
+- Digite um nome e uma atividade nos campos "Nome" e "Atividade" do formulário
+- Passe o mouse sobre o botão Salvar (o cursor do mouse e a cor do botão são alterados)
+- Clique no botão Salvar
+- O formulário é salvo e fechado, retornando ao perfil do usuário as novas informações
+- Clique novamente no ícone em forma de lápis para abrir novamente o formulário
+- Passe o mouse sobre o botão X (o cursor do mouse e a cor do botão são alterados)
+- Clique no botão X para fechar o formulário
+
+Essa é a ✨Magia ✨
+
+---
+
 ## 📁 Project structure
 
 ```
