@@ -47,7 +47,6 @@
 
 .profile__name {
   max-width: 373px;
-  max-height: 39px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -89,7 +88,6 @@
 
 .profile__profession {
   max-width: 415px;
-  max-height: 22px;
   width: 100%;
   font-family: "Inter";
   font-style: normal;
@@ -173,7 +171,6 @@
 
   .profile__name {
     max-width: 335.7px;
-    max-height: 35.01px;
     font-size: 37.8px;
     line-height: 43.2px;
   }
@@ -198,7 +195,6 @@
 
   .profile__profession {
     max-width: 373.5px;
-    max-height: 19.8px;
     width: 100%;
     font-size: 16.2px;
     line-height: 19.8px;
@@ -259,7 +255,6 @@
 
   .profile__name {
     max-width: 317.03px;
-    max-height: 33.06px;
     font-size: 35.69px;
     line-height: 40.79px;
   }
@@ -284,7 +279,6 @@
 
   .profile__profession {
     max-width: 352.73px;
-    max-height: 18.69px;
     font-size: 15.29px;
     line-height: 18.69px;
     margin: 13.59px auto 0 0;
@@ -344,7 +338,6 @@
 
   .profile__name {
     max-width: 298.35px;
-    max-height: 31.11px;
     font-size: 33.58px;
     line-height: 38.38px;
   }
@@ -369,7 +362,6 @@
 
   .profile__profession {
     max-width: 331.95px;
-    max-height: 17.58px;
     font-size: 14.38px;
     line-height: 17.58px;
     margin: 12.78px auto 0 0;
@@ -429,7 +421,6 @@
 
   .profile__name {
     max-width: 261.05px;
-    max-height: 27.22px;
     font-size: 29.38px;
     line-height: 33.58px;
   }
@@ -454,7 +445,6 @@
 
   .profile__profession {
     max-width: 290.45px;
-    max-height: 15.38px;
     font-size: 12.58px;
     line-height: 15.38px;
     margin: 11.18px auto 0 0;
@@ -514,7 +504,6 @@
 
   .profile__name {
     max-width: 223.74px;
-    max-height: 23.33px;
     font-size: 25.18px;
     line-height: 28.78px;
   }
@@ -539,7 +528,6 @@
 
   .profile__profession {
     max-width: 248.94px;
-    max-height: 13.18px;
     font-size: 10.78px;
     line-height: 13.18px;
     margin: 9.58px auto 0 0;
@@ -599,7 +587,6 @@
 
   .profile__name {
     max-width: 191.09px;
-    max-height: 19.92px;
     font-size: 21.5px;
     line-height: 24.58px;
   }
@@ -624,7 +611,6 @@
 
   .profile__profession {
     max-width: 212.61px;
-    max-height: 11.25px;
     font-size: 9.2px;
     line-height: 11.25px;
     margin: 8.18px auto 0 0;
@@ -692,7 +678,6 @@
 
   .profile__name {
     max-width: 330.71px;
-    max-height: 37.1px;
     font-size: 37.1px;
     line-height: 45.53px;
     text-align: center;
@@ -719,7 +704,6 @@
 
   .profile__profession {
     max-width: 475.82px;
-    max-height: 23.61px;
     width: 100%;
     font-size: 23.61px;
     line-height: 28.67px;
@@ -788,7 +772,6 @@
 
   .profile__name {
     max-width: 264.57px;
-    max-height: 29.68px;
     font-size: 29.68px;
     line-height: 36.43px;
     text-align: center;
@@ -816,7 +799,6 @@
 
   .profile__profession {
     max-width: 380.66px;
-    max-height: 18.89px;
     width: 100%;
     font-size: 18.89px;
     line-height: 22.94px;
@@ -885,7 +867,6 @@
 
   .profile__name {
     max-width: 229.67px;
-    max-height: 25.77px;
     font-size: 25.77px;
     line-height: 31.63px;
     text-align: center;
@@ -913,7 +894,6 @@
 
   .profile__profession {
     max-width: 330.44px;
-    max-height: 16.4px;
     width: 100%;
     font-size: 16.4px;
     line-height: 19.92px;
@@ -986,7 +966,6 @@
 
   .profile__name {
     max-width: 196px;
-    max-height: 22px;
     font-size: 22px;
     line-height: 27px;
     text-align: center;
@@ -1015,7 +994,6 @@
 
   .profile__profession {
     max-width: 282px;
-    max-height: 14px;
     width: 100%;
     font-size: 14px;
     line-height: 17px;

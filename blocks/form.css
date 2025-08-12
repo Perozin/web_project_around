@@ -66,7 +66,6 @@
 .form__title {
   grid-area: "title";
   max-width: 330px;
-  max-height: 23px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -114,7 +113,6 @@
 /* text */
 
 .form__input-name_text {
-  max-height: 14px;
   width: 100%;
   font-family: "Inter";
   font-style: normal;
@@ -155,7 +153,6 @@
 }
 
 .form__input-activity_text {
-  max-height: 14px;
   width: 100%;
   font-family: "Inter";
   font-style: normal;
@@ -204,7 +201,6 @@
 
 .form__submit-button-text {
   max-width: 109px;
-  max-height: 18px;
   width: 100%;
   height: 100%;
   font-family: "Inter";
@@ -257,7 +253,6 @@
 
   .form__title {
     max-width: 297px;
-    max-height: 20.7px;
     font-size: 21.6px;
     line-height: 26.1px;
     margin: 30.6px auto 0 32.4px;
@@ -281,7 +276,6 @@
   /* text */
 
   .form__input-name_text {
-    max-height: 12.6px;
     font-size: 12.6px;
     line-height: 15.3px;
     padding: 0 0 11.93px;
@@ -302,7 +296,6 @@
   }
 
   .form__input-activity_text {
-    max-height: 12.6px;
     font-size: 12.6px;
     line-height: 15.3px;
     padding: 0 0 12px;
@@ -325,7 +318,6 @@
 
   .form__submit-button-text {
     max-width: 98.1px;
-    max-height: 16.2px;
     font-size: 16.2px;
     line-height: 19.8px;
     margin: 12.29px 111.6px 16.64px 112.5px;
@@ -371,7 +363,6 @@
 
   .form__title {
     max-width: 280.48px;
-    max-height: 19.54px;
     font-size: 20.39px;
     line-height: 24.64px;
     margin: 28.89px auto 0 30.59px;
@@ -395,7 +386,6 @@
   /* text */
 
   .form__input-name_text {
-    max-height: 11.89px;
     font-size: 11.89px;
     line-height: 14.44px;
     padding: 0 0 11.26px;
@@ -416,7 +406,6 @@
   }
 
   .form__input-activity_text {
-    max-height: 11.89px;
     font-size: 11.89px;
     line-height: 14.44px;
     padding: 0 0 11.33px;
@@ -439,7 +428,6 @@
 
   .form__submit-button-text {
     max-width: 92.64px;
-    max-height: 15.29px;
     font-size: 15.29px;
     line-height: 18.69px;
     margin: 11.6px 105.39px 15.71px 106.24px;
@@ -485,7 +473,6 @@
 
   .form__title {
     max-width: 263.95px;
-    max-height: 18.38px;
     font-size: 19.18px;
     line-height: 23.18px;
     margin: 27.18px auto 0 28.78px;
@@ -509,7 +496,6 @@
   /* text */
 
   .form__input-name_text {
-    max-height: 11.18px;
     font-size: 11.18px;
     line-height: 13.58px;
     padding: 0 0 10.59px;
@@ -530,7 +516,6 @@
   }
 
   .form__input-activity_text {
-    max-height: 11.18px;
     font-size: 11.18px;
     line-height: 13.58px;
     padding: 0 0 10.66px;
@@ -553,7 +538,6 @@
 
   .form__submit-button-text {
     max-width: 87.18px;
-    max-height: 14.38px;
     font-size: 14.38px;
     line-height: 10.58px;
     margin: 10.91px 99.18px 14.78px 99.98px;
@@ -575,7 +559,7 @@
   }
 
   .form__button-close:hover {
-    top: -58.59px;
+    /* top: -58.59px; */
     right: -1px;
   }
 
@@ -598,7 +582,6 @@
 
   .form__title {
     max-width: 278.88px;
-    max-height: 25.77px;
     font-size: 21.09px;
     line-height: 25.77px;
     margin: 29.29px auto 0 16.52px;
@@ -622,7 +605,6 @@
   /* text */
 
   .form__input-name_text {
-    max-height: 19.92px;
     padding: 0 0 10.54px;
   }
 
@@ -641,7 +623,6 @@
   }
 
   .form__input-activity_text {
-    max-height: 19.92px;
     padding: 0 0 10.54px;
   }
 
@@ -661,7 +642,6 @@
 
   .form__submit-button-text {
     max-width: 53.9px;
-    max-height: 21.09px;
     font-size: 16.4px;
     line-height: 19.92px;
     margin: 16.4px 112.49px;
@@ -711,7 +691,6 @@
 
   .form__title {
     max-width: 238px;
-    max-height: 22px;
     font-size: 18px;
     line-height: 22px;
     margin: 25px auto 0 14.1px;
@@ -735,7 +714,6 @@
   /* text */
 
   .form__input-name_text {
-    max-height: 17px;
     padding: 0 0 9px;
   }
 
@@ -754,7 +732,6 @@
   }
 
   .form__input-activity_text {
-    max-height: 17px;
     padding: 0 0 9px;
   }
 
@@ -774,7 +751,6 @@
 
   .form__submit-button-text {
     max-width: 46px;
-    max-height: 18px;
     font-size: 14px;
     line-height: 17px;
     margin: 14px 96px;
