@@ -1,10 +1,10 @@
 # 🌐 Tripleten web_project_around
 
-<!-- ![Preview do projeto](./images/preview-homeland.png) -->
+![Preview do projeto](./images/preview-around.png)
 
 > Click on the image above to access the project in production:
 
-<!-- > 👉 [https://perozin.github.io/web_project_homeland](https://perozin.github.io/web_project_homeland) -->
+> 👉 [https://perozin.github.io/web_project_around](https://perozin.github.io/web_project_arpund)
 
 ---
 
@@ -16,7 +16,7 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 
 ## 🚀 Technologies and Tools Used
 
-- 🎨 [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+<!-- - 🎨 [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - 💠 [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - 🧭 [Git](https://git-scm.com/) + [GitHub](https://github.com/)
 - 🌐 [GitHub Pages](https://pages.github.com/)
@@ -25,6 +25,19 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 - 📐 **BEM Methodology** (Block Element Modifier)
 - 🧑‍🎨 **Interface design with [Figma](https://www.figma.com/)**
 - 💻 **Responsive web design**
+- ✅ Basic semantics and clear directory structure -->
+
+- 🎨 HTML5
+- 💠 CSS3
+- ⚙️ JavaScript (ES6+) — comportamento, interatividade e lógica no cliente.
+- 🏗️ DOM (Document Object Model) — manipulação da estrutura e conteúdo da página via JS.
+- 🧭 Git + GitHub
+- 🌐 GitHub Pages
+- 📱 Media Queries (responsividade)
+- 🔧 CSS Flexbox e Grid Layout
+- 📐 BEM Methodology (Block Element Modifier)
+- 🧑‍🎨 Interface design with Figma
+- 💻 Responsive web design
 - ✅ Basic semantics and clear directory structure
 
 ---
@@ -85,20 +98,22 @@ web_project_homeland/
 ## 📌 How to view the project
 
 You can directly access the project hosted on GitHub Pages:  
-👉 **[perozin.github.io/web_project_homeland](https://perozin.github.io/web_project_homeland/)**
+👉 **[perozin.github.io/web_project_homeland](https://perozin.github.io/web_project_around/)**
 
 Or clone and run locally:
 
 <pre><code>
   . bash
-  . git clone https://github.com/Perozin/web_project_homeland.git 
-  . cd web_project_homeland 
+  . git clone https://github.com/Perozin/web_project_around.git 
+  . cd web_project_around
   . Then, open the index.html file in your browser.
 </code></pre>
 
 ---
 
 ## 📚 Lessons learned from the project
+
+```
 
 ✅ Page structuring with HTML5
 ✅ Visual organization with CSS3
@@ -108,6 +123,8 @@ Or clone and run locally:
 ✅ Free publishing with GitHub Pages
 ✅ Version control with Git
 ✅ Basic JavaScript and Working with the DOM
+
+```
 
 ---
 
