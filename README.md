@@ -4,7 +4,7 @@
 
 > Click on the image above to access the project in production:
 
-> 👉 [https://perozin.github.io/web_project_around](https://perozin.github.io/web_project_arpund)
+> 👉 [https://perozin.github.io/web_project_around](https://perozin.github.io/web_project_around)
 
 ---
 
@@ -15,17 +15,6 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 ---
 
 ## 🚀 Technologies and Tools Used
-
-<!-- - 🎨 [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- 💠 [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- 🧭 [Git](https://git-scm.com/) + [GitHub](https://github.com/)
-- 🌐 [GitHub Pages](https://pages.github.com/)
-- 📱 Media Queries (responsividade)
-- 🔧 CSS Flexbox e Grid Layout
-- 📐 **BEM Methodology** (Block Element Modifier)
-- 🧑‍🎨 **Interface design with [Figma](https://www.figma.com/)**
-- 💻 **Responsive web design**
-- ✅ Basic semantics and clear directory structure -->
 
 - 🎨 HTML5
 - 💠 CSS3
@@ -98,7 +87,7 @@ web_project_homeland/
 ## 📌 How to view the project
 
 You can directly access the project hosted on GitHub Pages:  
-👉 **[perozin.github.io/web_project_homeland](https://perozin.github.io/web_project_around/)**
+👉 **[perozin.github.io/web_project_around](https://perozin.github.io/web_project_around/)**
 
 Or clone and run locally:
 
@@ -128,7 +117,7 @@ Or clone and run locally:
 
 ---
 
-## 🚧 Melhorias futuras (to-do)
+## 🚧 Future improvements (to-do)
 
 - [ ] ✨ Add smooth CSS animations
 - [ ] 🧩 Include basic JavaScript interactions
@@ -136,7 +125,7 @@ Or clone and run locally:
 
 ---
 
-## 📄 Licença
+## 📄 License
 
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT).
 
