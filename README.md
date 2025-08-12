@@ -42,18 +42,17 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 
 ## 🛠️ Mode of Interaction
 
-- Passe o mouse sobre o ícone em forma de lápis no perfil do usuário (o cursor do mouse é alterado)
-- Clique no ícone em forma de lápis
-- Um formulário é aberto, trazendo do perfil do usuário para o formulário o nome e a atividade
-- Digite um nome e uma atividade nos campos "Nome" e "Atividade" do formulário
-- Passe o mouse sobre o botão Salvar (o cursor do mouse e a cor do botão são alterados)
-- Clique no botão Salvar
-- O formulário é salvo e fechado, retornando ao perfil do usuário as novas informações
-- Clique novamente no ícone em forma de lápis para abrir novamente o formulário
-- Passe o mouse sobre o botão X (o cursor do mouse e a cor do botão são alterados)
-- Clique no botão X para fechar o formulário
-
-Essa é a ✨Magia ✨
+- Hover over the pencil icon in the user's profile (the mouse cursor changes)
+- Click the pencil icon
+- A form opens, bringing the name and activity from the user's profile into the form
+- Enter a name and activity in the "Name" and "Activity" fields of the form
+- Hover over the Save button (the mouse cursor and button color change)
+- Click the Save button
+- The form is saved and closed, returning the new information to the user's profile
+- Click the pencil icon again to reopen the form
+- Hover over the "X" button (the mouse cursor and button color change)
+- Click the "X" button to close the form
+- This is the ✨Magic ✨
 
 ---
 
