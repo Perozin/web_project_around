@@ -123,6 +123,11 @@
   box-sizing: border-box;
 }
 
+.profile__add-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* add-button-vector */
 
 .profile__add-button_vector {
@@ -131,6 +136,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.profile__add-button_vector:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* -------------  1152 ------------- */
