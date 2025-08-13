@@ -105,28 +105,27 @@
   max-width: 150px;
   max-height: 50px;
   width: 100%;
-  box-sizing: border-box;
   border: 2px solid #ffffff;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
   margin: 35px 0;
   padding: 0;
-  background: none;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.profile__add-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 /* add-button-vector */
 
 .profile__add-button_vector {
+  max-width: 22px;
   max-height: 22px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -212,6 +211,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 19.8px;
     max-height: 19.8px;
   }
 }
@@ -295,6 +295,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 18.69px;
     max-height: 18.69px;
   }
 }
@@ -378,6 +379,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 17.58px;
     max-height: 17.58px;
   }
 }
@@ -461,6 +463,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 15.12px;
     max-height: 15.12px;
   }
 }
@@ -544,6 +547,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 12.95px;
     max-height: 12.95px;
   }
 }
@@ -619,8 +623,6 @@
   /* add-button */
 
   .profile__add-button {
-    /* max-width: 26.06px;
-    max-height: 26.06px; */
     max-width: 76.84px;
     max-height: 26.06px;
     margin: 18.79px 0;
@@ -629,6 +631,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 11.06px;
     max-height: 11.06px;
   }
 }
@@ -722,7 +725,8 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
-    height: 26.97px;
+    max-width: 26.97px;
+    max-height: 26.97px;
     margin: 28.67px auto;
   }
 }
@@ -817,6 +821,7 @@
   /* add-button-vector */
 
   .profile__add-button_vector {
+    max-width: 21.58px;
     height: 21.58px;
     margin: 22.94px auto;
   }
@@ -906,14 +911,14 @@
   .profile__add-button {
     max-width: 330.44px;
     max-height: 58.59px;
-    box-sizing: border-box;
     margin: 41.01px 0 0;
   }
 
   /* add-button-vector */
 
   .profile__add-button_vector {
-    height: 18.74px;
+    max-width: 18.74px;
+    max-height: 18.74px;
     margin: 19.92px auto;
   }
 }
@@ -1006,14 +1011,14 @@
   .profile__add-button {
     max-width: 282px;
     max-height: 50px;
-    box-sizing: border-box;
     margin: 35px 0 0;
   }
 
   /* add-button-vector */
 
   .profile__add-button_vector {
-    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
     margin: 17px auto;
   }
 }
