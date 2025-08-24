@@ -1,21 +1,21 @@
 // wrappers
 
 const modal = document.querySelector(".popup");
-const popupFormElement = document.querySelector(".popup__form");
+const popupFormElement = document.querySelector(".popup__content");
 
 // buttons and other DOM
 
 const profileName = document.querySelector(".profile__name");
 const profileActivity = document.querySelector(".profile__profession");
 const profileEditButton = document.querySelector(".profile__edit-button");
-const popupCloseButton = document.querySelector(".form__button-close");
+const popupCloseButton = document.querySelector(".popup__close-button");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // form data
 
-const nameInput = popupFormElement.querySelector(".form__input-name_text");
+const nameInput = popupFormElement.querySelector(".popup__input_type_name");
 const activityInput = popupFormElement.querySelector(
-  ".form__input-activity_text"
+  ".popup__input_type_activity"
 );
 
 // functions of calls

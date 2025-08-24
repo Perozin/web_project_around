@@ -217,50 +217,45 @@
         </p>
       </footer>
 
-      <section class="popup">
-        <form class="popup__form form" id="edit-profile-form">
-          <button type="button" class="form__button-close"></button>
+      <div class="popup" id="edit-popup">
+        <div class="popup__content">
+          <button
+            type="button"
+            aria-label="Close popup"
+            class="popup__close-button"
+          ></button>
 
-          <fieldset class="form__fieldset">
-            <h2 class="form__title">Editar perfil</h2>
-            <div class="form__input">
-              <input
-                type="text"
-                class="form__input-name form__input-name_text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-                required
-              />
+          <h3 class="popup__title">Editar perfil</h3>
 
-              <img
-                src="./images/Line-2.png"
-                alt="linha semi transparente que divide os input do form"
-                class="form__input-name form__input-name_line"
-              />
+          <form class="popup__form" id="edit-perfil-form">
+            <input
+              type="text"
+              class="popup__input popup__input_type_name"
+              id="name"
+              name="name"
+              placeholder="Nome"
+              required
+            />
 
-              <input
-                type="text"
-                class="form__input-activity form__input-activity_text"
-                id="act"
-                name="act"
-                placeholder="Sobre mim"
-                required
-              />
+            <hr class="popup__line popup__line_name" />
 
-              <img
-                src="./images/Line-2.1.png"
-                alt="linha semi transparente que divide os input do form"
-                class="form__input-activity form__input-activity_line"
-              />
-            </div>
+            <input
+              type="text"
+              class="popup__input popup__input_type_activity"
+              id="activity"
+              name="activity"
+              placeholder="Sobre mim"
+              required
+            />
 
-            <button type="submit" class="form__submit-button">
-              <p class="form__submit-button-text">Salvar</p>
+            <hr class="popup__line popup__line_activity" />
+
+            <button type="submit" class="popup__button popup__button_text">
+              Salvar
             </button>
-          </fieldset>
-        </form>
-      </section>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/index.js"></script>
