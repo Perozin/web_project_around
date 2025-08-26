@@ -1,7 +1,8 @@
 // wrappers
 
 const modal = document.querySelector(".popup");
-const popupFormElement = document.querySelector(".popup__content");
+const popupFormElement = document.querySelector(".popup__content_profile");
+const popupFormNewCard = document.querySelector(".popup__content_new-card");
 
 // buttons and other DOM
 

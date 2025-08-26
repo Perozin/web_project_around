@@ -33,6 +33,14 @@
   z-index: 1;
 }
 
+#new-card-popup {
+  max-height: 720px;
+}
+
+#image-popup {
+  max-height: 720px;
+}
+
 /* content */
 
 .popup__content {
@@ -48,6 +56,13 @@
   flex-direction: column;
   z-index: 2;
   position: relative;
+}
+
+.popup__content_image {
+  max-width: 433px;
+  max-height: 540px;
+  background-image: url("../images/kirill-pershin-1088404-unsplash-1.jpg");
+  border-radius: 0px;
 }
 
 /* close-icon */

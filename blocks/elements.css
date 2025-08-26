@@ -1,6 +1,6 @@
 /* -------------  1280  ------------- */
 
-/* elements */
+/* section */
 
 .elements {
   max-width: 880px;
@@ -9,6 +9,8 @@
   margin: 50px 0 0;
   padding: 0;
 }
+
+/* ul */
 
 .elements__cards {
   max-width: 880px;
@@ -31,13 +33,15 @@
 /* -------------  1152 ------------- */
 
 @media screen and (max-width: 1152px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 792px;
     max-height: 668.7px;
     margin: 45px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 792px;
@@ -50,13 +54,15 @@
 /* -------------  1088------------- */
 
 @media screen and (max-width: 1088px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 747.96px;
     max-height: 631.52px;
     margin: 42.49px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 747.96px;
@@ -69,13 +75,15 @@
 /* -------------  1024  ------------- */
 
 @media screen and (max-width: 1024px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 703.9px;
     max-height: 594.32px;
     margin: 39.98px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 703.9px;
@@ -88,13 +96,15 @@
 /* -------------  896 ------------- */
 
 @media screen and (max-width: 896px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 615.91px;
     max-height: 520.03px;
     margin: 34.98px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 615.91px;
@@ -106,13 +116,15 @@
 
 /* -------------  768 ------------- */
 @media screen and (max-width: 768px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 527.89px;
     max-height: 5397.51px;
     margin: 85.71px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 527.89px;
@@ -130,13 +142,15 @@
 /* -------------  656  ------------- */
 
 @media screen and (max-width: 656px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 450.87px;
     max-height: 4610.5px;
     margin: 73.22px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 450.87px;
@@ -149,13 +163,15 @@
 /* -------------  544  ------------- */
 
 @media screen and (max-width: 544px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 475.82px;
     max-height: 3823.61px;
     margin: 60.73px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 475.82px;
@@ -175,13 +191,15 @@
 /* -------------  432  ------------- */
 
 @media screen and (max-width: 432px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 380.66px;
     max-height: 3058.89px;
     margin: 48.59px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 380.66px;
@@ -193,13 +211,15 @@
 /* -------------  375  ------------- */
 
 @media screen and (max-width: 375px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 330.44px;
     max-height: 2655.29px;
     margin: 42.18px 0 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 330.44px;
@@ -211,17 +231,20 @@
 /* -------------  320  ------------- */
 
 @media screen and (max-width: 320px) {
-  /* elements */
+  /* section */
 
   .elements {
     max-width: 282px;
     max-height: 2266px;
-    margin: 36px 0 0;
+    margin: 36px auto 0;
   }
+
+  /* ul */
 
   .elements__cards {
     max-width: 282px;
     max-height: 2266px;
+    margin: 0;
     row-gap: 20px;
   }
 }
