@@ -20,7 +20,7 @@
   list-style-type: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, 1f);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "valey lake mountain"
     "alps park province";
@@ -129,7 +129,7 @@
   .elements__cards {
     max-width: 527.89px;
     max-height: 5397.51px;
-    grid-template-columns: repeat(2, 1f);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "valey lake"
       "mountain alps"
@@ -167,7 +167,8 @@
 
   .elements {
     max-width: 475.82px;
-    max-height: 3823.61px;
+    /* max-height: 3823.61px; */
+    height: auto;
     margin: 60.73px 0 0;
   }
 
@@ -175,8 +176,9 @@
 
   .elements__cards {
     max-width: 475.82px;
-    max-height: 3823.61px;
-    grid-template-columns: 1f;
+    /* max-height: 3823.61px; */
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
       "valey"
       "lake"
@@ -195,7 +197,8 @@
 
   .elements {
     max-width: 380.66px;
-    max-height: 3058.89px;
+    /* max-height: 3058.89px; */
+    height: auto;
     margin: 48.59px 0 0;
   }
 
@@ -203,7 +206,8 @@
 
   .elements__cards {
     max-width: 380.66px;
-    max-height: 3058.89px;
+    /* max-height: 3058.89px; */
+    height: auto;
     row-gap: 23.46px;
   }
 }
@@ -215,7 +219,8 @@
 
   .elements {
     max-width: 330.44px;
-    max-height: 2655.29px;
+    /* max-height: 2655.29px; */
+    /* height: auto; */
     margin: 42.18px 0 0;
   }
 
@@ -223,7 +228,8 @@
 
   .elements__cards {
     max-width: 330.44px;
-    max-height: 2655.29px;
+    /* max-height: 2655.29px; */
+    /* height: auto; */
     row-gap: 23.46px;
   }
 }
@@ -235,7 +241,8 @@
 
   .elements {
     max-width: 282px;
-    max-height: 2266px;
+    /* max-height: 2266px; */
+    /* height: auto; */
     margin: 36px auto 0;
   }
 
@@ -243,7 +250,8 @@
 
   .elements__cards {
     max-width: 282px;
-    max-height: 2266px;
+    /* max-height: 2266px; */
+    /* height: auto; */
     margin: 0;
     row-gap: 20px;
   }

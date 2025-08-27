@@ -22,12 +22,18 @@
 .element__image {
   max-width: 282px;
   max-height: 282px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
   border-radius: 10px 10px 0px 0px;
   outline: none;
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.element__delete-button {
 }
 
 /* description */
@@ -74,14 +80,23 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/element-like-active.svg");
+  background-image: url("../images/element-like-disabled.svg");
   border: none;
   margin: auto 3px 1px 0;
   padding: 0;
+  opacity: 100%;
+  /* display: visible; */
 }
 
 .element__like-button:hover {
   background-image: url("../images/element-like-disabled.svg");
+  opacity: 10%;
+  cursor: pointer;
+}
+
+.element__like-button:active {
+  background-image: url("../images/element-like-active.svg");
+  opacity: 100%;
   cursor: pointer;
 }
 
@@ -272,7 +287,7 @@
 
   .element__image {
     max-width: 206.37px;
-    max-width: 206.37px;
+    min-height: 206.37px;
     border-radius: 8.66px 8.66px 0px 0px;
   }
 
@@ -315,7 +330,7 @@
 
   .element__image {
     max-width: 209.86px;
-    max-height: 209.86px;
+    min-height: 209.86px;
     border-radius: 7.4px 7.4px 0px 0px;
   }
 
@@ -350,7 +365,9 @@
 
   .element {
     max-width: 475.82px;
-    max-height: 609.12px;
+    min-height: 609.12px;
+    width: 100%;
+    height: 100%;
     border-radius: 16.96px;
   }
 
@@ -358,7 +375,11 @@
 
   .element__image {
     max-width: 475.82px;
-    max-height: 475.82px;
+    min-height: 475.82px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: 16.85px 16.85px 0px 0px;
   }
 
@@ -367,6 +388,8 @@
   .element__description {
     max-width: 415.08px;
     max-height: 38.8px;
+    width: 100%;
+    height: 100%;
     margin: 42.17px auto 52.3px;
   }
 
@@ -393,7 +416,7 @@
 
   .element {
     max-width: 380.66px;
-    max-height: 487.3px;
+    min-height: 487.3px;
     border-radius: 13.57px;
   }
 
@@ -401,7 +424,7 @@
 
   .element__image {
     max-width: 380.66px;
-    max-height: 380.66px;
+    min-height: 380.66px;
     border-radius: 13.48px 13.48px 0px 0px;
   }
 
@@ -444,7 +467,7 @@
 
   .element__image {
     max-width: 330.44px;
-    max-height: 330.44px;
+    min-height: 330.44px;
     border-radius: 11.71px 11.71px 0px 0px;
   }
 
@@ -479,19 +502,17 @@
 
   .element {
     max-width: 282px;
-    max-height: 361px;
-    width: 95%;
+    /* max-height: 361px; */
+    min-height: auto;
     border-radius: 10px;
-    /* margin: 0; */
   }
 
   /* image */
 
   .element__image {
     max-width: 282px;
-    max-height: 282px;
+    min-height: 282px;
     border-radius: 10px 10px 0px 0px;
-    /* margin: 0; */
   }
 
   /* description */

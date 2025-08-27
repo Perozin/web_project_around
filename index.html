@@ -52,8 +52,7 @@
             </button>
             <h2 class="profile__profession">Explorador</h2>
           </div>
-
-          <button type="submit" class="profile__add-button">
+          <button type="button" class="profile__add-button">
             <img
               src="./images/Vector-add-button.png"
               alt="sinal de adição, representando o botão adicionar"
@@ -64,7 +63,7 @@
 
         <section class="elements page__section">
           <ul class="elements__cards">
-            <li class="element">
+            <!-- <li class="element">
               <img
                 src="./images/kirill-pershin-1088404-unsplash-1.jpg"
                 alt="imagem de um lugar chamado Vale de Yosemite com rio e pinheiros"
@@ -157,7 +156,7 @@
                   class="element__like-button"
                 ></button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </main>
@@ -195,9 +194,7 @@
               required
             />
             <hr class="popup__line popup__line_activity" />
-            <button type="submit" class="popup__button popup__button_profile">
-              Salvar
-            </button>
+            <button type="submit" class="popup__button">Salvar</button>
           </form>
         </div>
       </div>
@@ -210,10 +207,10 @@
             class="popup__close-button"
           ></button>
           <h3 class="popup__title">Novo local</h3>
-          <form class="popup__form" id="edit-perfil-form">
+          <form class="popup__form" id="new-card-form">
             <input
               type="text"
-              class="popup__input popup__input_type_name"
+              class="popup__input popup__input_type_card-name"
               id="title"
               name="title"
               placeholder="Título"
@@ -222,7 +219,7 @@
             <hr class="popup__line popup__line_name" />
             <input
               type="text"
-              class="popup__input popup__input_type_activity"
+              class="popup__input popup__input_type-url"
               id="URL"
               name="URL"
               placeholder="Link de imagem"
@@ -247,22 +244,20 @@
       </div>
     </div>
 
-    <!-- card-template -->
     <template id="element-template">
-      <!-- card -->
       <li class="element">
-        <img src="#" alt="" class="card__image" />
+        <img src="#" alt="" class="element__image" />
         <button
           aria-label="Delete card"
           type="button"
-          class="card__delete-button"
+          class="element__delete-button"
         ></button>
-        <div class="card__description">
-          <h2 class="card__title"></h2>
+        <div class="element__description">
+          <h2 class="element__title"></h2>
           <button
             aria-label="Like card"
             type="button"
-            class="card__like-button"
+            class="element__like-button"
           ></button>
         </div>
       </li>
