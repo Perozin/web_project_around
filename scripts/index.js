@@ -122,19 +122,38 @@ function closeModal(modal) {
   modal.classList.remove("popup_is-opened");
 }
 
-// fechar popup clicando fora do conteúdo
-function closePopupOnOverlay(modal) {
+// função habilita fechamento de um modal
+function enableModalClose(modal) {
+  const closeButton = modal.querySelector(".popup__button-close");
+
+  // pelo botão X
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      closeModal(modal);
+    });
+  }
+
+  // clicando no overlay
   modal.addEventListener("click", (evt) => {
-    // Se o clique foi no overlay (fundo), e não dentro do conteúdo
     if (evt.target === modal) {
       closeModal(modal);
     }
   });
 }
 
-closePopupOnOverlay(editFormModalWindow);
-closePopupOnOverlay(cardFormModalWindow);
-closePopupOnOverlay(imageModalWindow);
+// pela tecla ESC
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape" || evt.key === "Esc") {
+    const openedModal = document.querySelector(".popup.popup_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+});
+
+enableModalClose(editFormModalWindow);
+enableModalClose(cardFormModalWindow);
+enableModalClose(imageModalWindow);
 
 // card constructor
 
