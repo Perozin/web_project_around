@@ -4,7 +4,6 @@
 
 .elements {
   max-width: 880px;
-  /* max-height: 743px; */
   height: auto;
   box-sizing: border-box;
   margin: 50px 0 0;
@@ -15,7 +14,6 @@
 
 .elements__cards {
   max-width: 880px;
-  /* max-height: 743px; */
   width: 100%;
   height: auto;
   list-style-type: none;
@@ -38,7 +36,6 @@
 
   .elements {
     max-width: 792px;
-    /* max-height: 668.7px; */
     margin: 45px 0 0;
   }
 
@@ -46,7 +43,6 @@
 
   .elements__cards {
     max-width: 792px;
-    /* max-height: 668.7px; */
     row-gap: 18px;
     column-gap: 15.3px;
   }
@@ -59,7 +55,6 @@
 
   .elements {
     max-width: 747.96px;
-    /* max-height: 631.52px; */
     margin: 42.49px 0 0;
   }
 
@@ -67,7 +62,6 @@
 
   .elements__cards {
     max-width: 747.96px;
-    /* max-height: 631.52px; */
     row-gap: 16.92px;
     column-gap: 14.44px;
   }
@@ -80,7 +74,6 @@
 
   .elements {
     max-width: 703.9px;
-    /* max-height: 594.32px; */
     margin: 39.98px 0 0;
   }
 
@@ -88,7 +81,6 @@
 
   .elements__cards {
     max-width: 703.9px;
-    /* max-height: 594.32px; */
     row-gap: 15.92px;
     column-gap: 13.58px;
   }
@@ -101,7 +93,6 @@
 
   .elements {
     max-width: 615.91px;
-    /* max-height: 520.03px; */
     margin: 34.98px 0 0;
   }
 
@@ -109,7 +100,6 @@
 
   .elements__cards {
     max-width: 615.91px;
-    /* max-height: 520.03px; */
     row-gap: 13.93px;
     column-gap: 11.88px;
   }
@@ -147,7 +137,6 @@
 
   .elements {
     max-width: 450.87px;
-    /* max-height: 4610.5px; */
     margin: 73.22px 0 0;
   }
 
@@ -155,7 +144,6 @@
 
   .elements__cards {
     max-width: 450.87px;
-    /* max-height: 4610.5px; */
     row-gap: 33.35px;
     column-gap: 28.98px;
   }
@@ -168,7 +156,6 @@
 
   .elements {
     max-width: 475.82px;
-    /* max-height: 3823.61px; */
     height: auto;
     margin: 60.73px 0 0;
   }
@@ -177,7 +164,6 @@
 
   .elements__cards {
     max-width: 475.82px;
-    /* max-height: 3823.61px; */
     height: auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -198,7 +184,6 @@
 
   .elements {
     max-width: 380.66px;
-    /* max-height: 3058.89px; */
     height: auto;
     margin: 48.59px 0 0;
   }
@@ -207,7 +192,6 @@
 
   .elements__cards {
     max-width: 380.66px;
-    /* max-height: 3058.89px; */
     height: auto;
     row-gap: 23.46px;
   }
@@ -220,8 +204,6 @@
 
   .elements {
     max-width: 330.44px;
-    /* max-height: 2655.29px; */
-    /* height: auto; */
     margin: 42.18px 0 0;
   }
 
@@ -229,8 +211,6 @@
 
   .elements__cards {
     max-width: 330.44px;
-    /* max-height: 2655.29px; */
-    /* height: auto; */
     row-gap: 23.46px;
   }
 }
@@ -242,8 +222,6 @@
 
   .elements {
     max-width: 282px;
-    /* max-height: 2266px; */
-    /* height: auto; */
     margin: 36px auto 0;
   }
 
@@ -251,8 +229,6 @@
 
   .elements__cards {
     max-width: 282px;
-    /* max-height: 2266px; */
-    /* height: auto; */
     margin: 0;
     max-inline-size: 361px;
     row-gap: 20px;

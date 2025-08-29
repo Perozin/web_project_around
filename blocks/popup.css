@@ -78,7 +78,7 @@
 
 .popup__caption {
   max-width: 291px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -119,7 +119,7 @@
 
 .popup__title {
   max-width: 330px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -147,7 +147,7 @@
 
 .popup__input {
   width: 358px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -196,7 +196,7 @@
   max-height: 50.15px;
   width: 100%;
   height: 100%;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
