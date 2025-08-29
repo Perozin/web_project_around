@@ -51,32 +51,29 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 | 1    | Hover over the pencil  | Show cursor hovering over the icon           |
 | 2    | Click the pencil       | **Edit Profile** pop-up opens                |
 | 3    | Enter name + activity  | Enter the new values                         |
-| 4    | Clique em **Save**     | The pop-up closes and the profile is updated |
-| 5    | click the **X** button | To close without saving                      |
+| 4    | Click **Save**         | The pop-up closes and the profile is updated |
+| 5    | Click the **X** button | To close without saving                      |
 
 ---
 
 ### 📍 New Location
 
-| Frame | Action            | Observação                        |
-| ----- | ----------------- | --------------------------------- |
-| 1     | Clique em **Add** | opens the **New Location** pop-up |
-| 2     | **Title**         | location name                     |
-| 3     | **Link**          | image URL                         |
-| 4     | Click **Create**  | New image appears in the gallery  |
-| 🗑️    | **Trash can**     | Delete the image                  |
-| ❤️    | **Like button**   | like/unlike                       |
+| Item | Action            | Observation                       |
+| ---- | ----------------- | --------------------------------- |
+| 1    | Click the **Add** | Opens the **New Location** pop-up |
+| 2    | **Title**         | Location name                     |
+| 3    | **Link**          | Image URL                         |
+| 4    | Click **Create**  | New image appears in the gallery  |
+| 🗑️   | **Trash can**     | Delete the image                  |
+| ❤️   | **Like button**   | Like/unlike                       |
 
 ---
 
 ### 🖼️ Image View
 
-- Click on any image → it displays in an enlarged size.
-- The enlarged image contains a caption in the footer.
-
 | Item | Action             | Observation                     |
 | ---- | ------------------ | ------------------------------- |
-| 1    | Click on any image | it displays in an enlarged size |
+| 1    | Click on any image | It displays in an enlarged size |
 | 2    | Show caption       | Visible image footer            |
 | 3    | Close image        | Back to gallery                 |
 
