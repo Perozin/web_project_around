@@ -42,34 +42,30 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 
 ## 🛠️ Mode of Interaction
 
+---
+
 ### ✏️ Edit Profile
 
-- Hover over the pencil icon on the user's profile.
-- Click the pencil icon → opens the **Edit Profile** pop-up.
-- The pop-up contains the **Name** and **Activity** fields.
-- Enter the new values ​​and click **Save**.
-- ✅ The pop-up closes and the profile is updated.
-- To close without saving: click the **X** button.
-
-![Edit Profile Demo](docs/gif/edit-profile.gif)
-<video src="docs/video/edit-profile.mp4" width="480" autoplay loop muted plays inline></video>
+| Item | Action                 | Observation                                  |
+| ---- | ---------------------- | -------------------------------------------- |
+| 1    | Hover over the pencil  | Show cursor hovering over the icon           |
+| 2    | Click the pencil       | **Edit Profile** pop-up opens                |
+| 3    | Enter name + activity  | Enter the new values                         |
+| 4    | Clique em **Save**     | The pop-up closes and the profile is updated |
+| 5    | click the **X** button | To close without saving                      |
 
 ---
 
 ### 📍 New Location
 
-- Click the **Add** button → opens the **New Location** pop-up.
-
-- Fill in the fields:
-- **Title** → location name.
-- **Link** → image URL.
-- Click **Create** → the new image is added to the feed.
-- Other actions:
-- 🗑️ **Trash can** → delete the image.
-- ❤️ **Like button** → like/unlike.
-
-![New Location Demo](docs/gif/new-location.gif)
-<video src="docs/video/new-location.mp4" width="480" autoplay loop muted plays inline></video>
+| Frame | Action            | Observação                        |
+| ----- | ----------------- | --------------------------------- |
+| 1     | Clique em **Add** | opens the **New Location** pop-up |
+| 2     | **Title**         | location name                     |
+| 3     | **Link**          | image URL                         |
+| 4     | Click **Create**  | New image appears in the gallery  |
+| 🗑️    | **Trash can**     | Delete the image                  |
+| ❤️    | **Like button**   | like/unlike                       |
 
 ---
 
@@ -78,12 +74,11 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 - Click on any image → it displays in an enlarged size.
 - The enlarged image contains a caption in the footer.
 
-![Image View Demo](docs/gif/image-view.gif)
-<video src="docs/video/image-view.mp4" width="480" autoplay loop muted plays inline></video>
-
----
-
-✨ This is how interaction happens within the app! ✨
+| Item | Action             | Observation                     |
+| ---- | ------------------ | ------------------------------- |
+| 1    | Click on any image | it displays in an enlarged size |
+| 2    | Show caption       | Visible image footer            |
+| 3    | Close image        | Back to gallery                 |
 
 ---
 
