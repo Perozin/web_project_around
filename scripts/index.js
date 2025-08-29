@@ -169,42 +169,24 @@ const getCardElement = (data) => {
 
 // handlers
 
-// preenche o formulário do perfil
+// formulário do popup-profile preenchido com dados do profile
 const fillProfileForm = () => {
   nameInput.value = profileName.textContent;
   activityInput.value = profileActivity.textContent;
 };
 
-// o usuário clica edit-button para abrir modal-form que é preenchido com os dados do perfil html
+// usuário clica edit-button para abrir modal-form-profile que é preenchido com os dados vindos do profile html
 const handleOpenEditModal = () => {
   fillProfileForm();
   openModal(editFormModalWindow);
 };
 
-// usuário clica no submit-button que fecha o modal-form e carrega os dados no perfil
+// usuário clica no submit-button que fecha o modal-form-profile e carrega os dados no perfil
 const handleProfileFormSubmit = (evt) => {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileActivity.textContent = activityInput.value;
   closeModal(editFormModalWindow);
-};
-
-// usuário clica no like-ícone para alterar seu comportamento
-const handleLikeIcon = (evt) => {
-  evt.target.classList.toggle("element__like-button_active");
-};
-
-// usuário clica no delete-ícone para remover o elemento card
-const handleDeleteCard = (evt) => {
-  evt.target.closest(".element").remove();
-};
-
-// usuário clica no add-button para prévisualizar imagem com as informações
-const handlePreviewPicture = (data) => {
-  imageElement.src = data.link;
-  imageElement.alt = data.name;
-  imageCaption.textContent = data.name;
-  openModal(imageModalWindow);
 };
 
 // usuário clica no submit-button para add novo elemento card com as informações no wrap ul, resetar os campos e fechar o modal.
@@ -218,6 +200,24 @@ const handleFormCardSubmit = (evt) => {
   cardFormElement.reset();
 };
 
+// usuário clica no like-ícone para alterar seu comportamento
+const handleLikeIcon = (evt) => {
+  evt.target.classList.toggle("element__like-button_active");
+};
+
+// usuário clica no delete-ícone para remover o elemento card
+const handleDeleteCard = (evt) => {
+  evt.target.closest(".element").remove();
+};
+
+// usuário clica no add-button para visualizar imagem com informação no rodapé
+const handlePreviewPicture = (data) => {
+  imageElement.src = data.link;
+  imageElement.alt = data.name;
+  imageCaption.textContent = data.name;
+  openModal(imageModalWindow);
+};
+
 // renderiza os cards na tela
 const renderCard = (data, wrap) => {
   wrap.prepend(getCardElement(data));
@@ -228,9 +228,6 @@ const renderCard = (data, wrap) => {
 //document.querySelector("#new-card-form").addEventListener("submit", handleProfileFormSubmit); //
 
 // ouvidor de evento submit-button do form-edit-modal
-// editFormModaWindow.addEventListener("submit", handleProfileFormSubmit);
-
-// xxx
 editFormModalWindow.addEventListener("submit", handleProfileFormSubmit);
 
 // ouvidor de evento submit-button do form-modal-card
