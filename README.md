@@ -42,17 +42,48 @@ This project was developed as part of the **Full-Stack Web Developer** training 
 
 ## 🛠️ Mode of Interaction
 
-- Hover over the pencil icon in the user's profile (the mouse cursor changes)
-- Click the pencil icon
-- A form opens, bringing the name and activity from the user's profile into the form
-- Enter a name and activity in the "Name" and "Activity" fields of the form
-- Hover over the Save button (the mouse cursor and button color change)
-- Click the Save button
-- The form is saved and closed, returning the new information to the user's profile
-- Click the pencil icon again to reopen the form
-- Hover over the "X" button (the mouse cursor and button color change)
-- Click the "X" button to close the form
-- This is the ✨Magic ✨
+### ✏️ Edit Profile
+
+- Hover over the pencil icon on the user's profile.
+- Click the pencil icon → opens the **Edit Profile** pop-up.
+- The pop-up contains the **Name** and **Activity** fields.
+- Enter the new values ​​and click **Save**.
+- ✅ The pop-up closes and the profile is updated.
+- To close without saving: click the **X** button.
+
+![Edit Profile Demo](docs/gif/edit-profile.gif)
+<video src="docs/video/edit-profile.mp4" width="480" autoplay loop muted plays inline></video>
+
+---
+
+### 📍 New Location
+
+- Click the **Add** button → opens the **New Location** pop-up.
+
+- Fill in the fields:
+- **Title** → location name.
+- **Link** → image URL.
+- Click **Create** → the new image is added to the feed.
+- Other actions:
+- 🗑️ **Trash can** → delete the image.
+- ❤️ **Like button** → like/unlike.
+
+![New Location Demo](docs/gif/new-location.gif)
+<video src="docs/video/new-location.mp4" width="480" autoplay loop muted plays inline></video>
+
+---
+
+### 🖼️ Image View
+
+- Click on any image → it displays in an enlarged size.
+- The enlarged image contains a caption in the footer.
+
+![Image View Demo](docs/gif/image-view.gif)
+<video src="docs/video/image-view.mp4" width="480" autoplay loop muted plays inline></video>
+
+---
+
+✨ This is how interaction happens within the app! ✨
 
 ---
 
