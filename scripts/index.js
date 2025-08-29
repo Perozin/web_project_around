@@ -44,9 +44,9 @@ const editFormModalWindow = document.querySelector("#edit-popup");
 const cardFormModalWindow = document.querySelector("#new-card-popup");
 
 // ***** formulário com dois campos
-const cardFormElement = cardFormModalWindow.querySelector(".popup__form");
+const cardFormElement = cardFormModalWindow.querySelector("#new-card-form"); // .popup__form"
 
-// ***** div popup principal (1280x750)
+// ***** div popup principal (1280x730)
 const imageModalWindow = document.querySelector("#image-popup");
 
 // buttons vars
@@ -71,35 +71,35 @@ const closeImageModalButton = imageModalWindow.querySelector(
   ".popup__close-button"
 );
 
-// profile block vars
+// profile-block vars
 
-// ***** variável armazena o elemento texto nome do bloco profile
+// ***** variável armazena o elemento texto "nome" do bloco profile
 const profileName = document.querySelector(".profile__name");
 
-// ***** variável armazena o elemento texto profissão do bloco profile
+// ***** variável armazena o elemento texto "profissão" do bloco profile
 const profileActivity = document.querySelector(".profile__profession");
 
 // form inputs vars
 
-// ***** variável armazena o texto nome do formulário popup-edit html
+// ***** variável armazena o texto "nome" no formulário popup-edit html
 const nameInput = editFormModalWindow.querySelector(".popup__input_type_name");
 
-// ***** variável armazena o texto atividade do formulário popup html
+// ***** variável armazena o texto "atividade" no formulário popup html
 const activityInput = editFormModalWindow.querySelector(
   ".popup__input_type_activity"
 );
 
-// ***** variável armazena o texto nome-card do formulário popup-card html
+// ***** variável armazena o texto "nome-card" no formulário popup-card html
 const cardNameInput = cardFormModalWindow.querySelector(
   ".popup__input_type_card-name"
 );
 
-// ***** variável armazena o texto URL do formulário popup-card html
+// ***** variável armazena o texto "URL" no formulário popup-card html
 const cardLinkInput = cardFormModalWindow.querySelector(
   ".popup__input_type_url"
 );
 
-// ***** variável armazena imagem do formulário popup-image html
+// ***** variável armazena "imagem" no formulário popup-image html
 const imageElement = imageModalWindow.querySelector(".popup__image");
 
 // ***** variável armazena o texto do caption do popup-image html
@@ -122,9 +122,23 @@ function closeModal(modal) {
   modal.classList.remove("popup_is-opened");
 }
 
+// fechar popup clicando fora do conteúdo
+function closePopupOnOverlay(modal) {
+  modal.addEventListener("click", (evt) => {
+    // Se o clique foi no overlay (fundo), e não dentro do conteúdo
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
+}
+
+closePopupOnOverlay(editFormModalWindow);
+closePopupOnOverlay(cardFormModalWindow);
+closePopupOnOverlay(imageModalWindow);
+
 // card constructor
 
-// função constrói o elemento card com imagem, descrição, botões delete e like
+// função constrói um elemento card com imagem, descrição, botões delete e like
 const getCardElement = (data) => {
   // clona o template html com todos elementos filhos
   const cardElement = elementTemplate.cloneNode(true);
@@ -156,16 +170,6 @@ const getCardElement = (data) => {
 
   return cardElement;
 };
-
-// // abre o modal
-// function openModal(modal) {
-//   modal.classList.add("popup_is-opened");
-// }
-
-// // fecha o modal
-// function closeModal(modal) {
-//   modal.classList.remove("popup_is-opened");
-// }
 
 // handlers
 
@@ -225,8 +229,6 @@ const renderCard = (data, wrap) => {
 
 // listeners
 
-//document.querySelector("#new-card-form").addEventListener("submit", handleProfileFormSubmit); //
-
 // ouvidor de evento submit-button do form-edit-modal
 editFormModalWindow.addEventListener("submit", handleProfileFormSubmit);
 
@@ -257,5 +259,4 @@ closeImageModalButton.addEventListener("click", () =>
 );
 
 // render initial cards
-
 initialCards.forEach((data) => renderCard(data, cardsWrap));
