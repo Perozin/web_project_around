@@ -133,7 +133,7 @@
 
 /* add-button-vector */
 
-.profile__add-button_vector {
+.profile__add-button-vector {
   max-width: 22px;
   max-height: 22px;
   background-color: transparent;
@@ -144,7 +144,7 @@
   padding: 0;
 }
 
-.profile__add-button_vector:hover {
+.profile__add-button-vector:hover {
   opacity: 60%;
   cursor: pointer;
 }
@@ -228,7 +228,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 19.8px;
     max-height: 19.8px;
   }
@@ -312,7 +312,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 18.69px;
     max-height: 18.69px;
   }
@@ -396,7 +396,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 17.58px;
     max-height: 17.58px;
   }
@@ -480,7 +480,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 15.12px;
     max-height: 15.12px;
   }
@@ -564,7 +564,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 12.95px;
     max-height: 12.95px;
   }
@@ -648,7 +648,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 11.06px;
     max-height: 11.06px;
   }
@@ -742,7 +742,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 26.97px;
     max-height: 26.97px;
     margin: 28.67px auto;
@@ -838,7 +838,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 21.58px;
     height: 21.58px;
     margin: 22.94px auto;
@@ -934,7 +934,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 18.74px;
     max-height: 18.74px;
     margin: 19.92px auto;
@@ -1034,7 +1034,7 @@
 
   /* add-button-vector */
 
-  .profile__add-button_vector {
+  .profile__add-button-vector {
     max-width: 16px;
     max-height: 16px;
     margin: 17px auto;
