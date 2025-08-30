@@ -87,8 +87,10 @@
               id="name"
               name="name"
               placeholder="Nome"
+              maxlength="40"
               required
             />
+            <span class="popup__error" id="error-profile-name"></span>
             <hr class="popup__line popup__line_name" />
             <input
               type="text"
@@ -96,8 +98,10 @@
               id="activity"
               name="activity"
               placeholder="Sobre mim"
+              maxlength="60"
               required
             />
+            <span class="popup__error" id="error-profile-activity"></span>
             <hr class="popup__line popup__line_activity" />
             <button type="submit" class="popup__button">Salvar</button>
           </form>
@@ -119,8 +123,10 @@
               id="title"
               name="title"
               placeholder="Título"
+              maxlength="30"
               required
             />
+            <span class="popup__error" id="error-title"></span>
             <hr class="popup__line popup__line_name" />
             <input
               type="text"
@@ -128,8 +134,10 @@
               id="URL"
               name="URL"
               placeholder="Link de imagem"
+              maxlength="200"
               required
             />
+            <span class="popup__error" id="error-url"></span>
             <hr class="popup__line popup__line_activity" />
             <button type="submit" class="popup__button">Criar</button>
           </form>

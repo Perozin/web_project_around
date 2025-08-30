@@ -69,6 +69,7 @@ const cardLinkInput = cardFormModalWindow.querySelector(
 );
 const imageElement = imageModalWindow.querySelector(".popup__image");
 const imageCaption = imageModalWindow.querySelector(".popup__caption");
+
 // year auto
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -111,8 +112,6 @@ enableModalClose(editFormModalWindow);
 enableModalClose(cardFormModalWindow);
 enableModalClose(imageModalWindow);
 
-// card constructor
-
 const getCardElement = (data) => {
   const cardElement = elementTemplate.cloneNode(true);
   const likeButton = cardElement.querySelector(".element__like-button");
@@ -131,12 +130,55 @@ const getCardElement = (data) => {
   return cardElement;
 };
 
-// handlers
-
 const fillProfileForm = () => {
   nameInput.value = profileName.textContent;
   activityInput.value = profileActivity.textContent;
 };
+
+function validateInput(input) {
+  const max = input.getAttribute("maxlength");
+  const value = input.value.trim();
+  const errorSpan = document.querySelector(`#error-${input.id}`);
+  let isValid = true;
+
+  if (!value) {
+    errorSpan.textContent = "Preencha este campo.";
+    input.classList.add("popup__input_invalid");
+    isValid = false;
+  } else if (value.length >= max) {
+    errorSpan.textContent = `Máximo de ${max} caracteres permitidos.`;
+    input.classList.add("popup__input_invalid");
+    isValid = false;
+  } else {
+    errorSpan.textContent = "";
+    input.classList.remove("popup__input_invalid");
+  }
+
+  return isValid;
+}
+
+document.querySelectorAll(".popup__input").forEach((input) => {
+  input.addEventListener("input", () => validateInput(input));
+});
+
+document.querySelectorAll(".popup__form").forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    let formIsValid = true;
+
+    form.querySelectorAll(".popup__input").forEach((input) => {
+      const isValid = validateInput(input);
+      if (!isValid) {
+        formIsValid = false;
+      }
+    });
+
+    if (!formIsValid) {
+      e.preventDefault();
+    }
+  });
+});
+
+// handlers
 
 const handleOpenEditModal = () => {
   fillProfileForm();
@@ -145,19 +187,40 @@ const handleOpenEditModal = () => {
 
 const handleProfileFormSubmit = (evt) => {
   evt.preventDefault();
+
   profileName.textContent = nameInput.value;
   profileActivity.textContent = activityInput.value;
+
   closeModal(editFormModalWindow);
+
+  editFormModalWindow.querySelectorAll(".popup__error").forEach((span) => {
+    span.textContent = "";
+  });
+
+  editFormModalWindow.querySelectorAll(".popup__input").forEach((input) => {
+    input.classList.remove("popup__input_invalid");
+  });
 };
 
 const handleFormCardSubmit = (evt) => {
   evt.preventDefault();
+
   renderCard(
     { name: cardNameInput.value, link: cardLinkInput.value },
     cardsWrap
   );
+
   closeModal(cardFormModalWindow);
+
   cardFormElement.reset();
+
+  cardFormElement.querySelectorAll(".popup__error").forEach((span) => {
+    span.textContent = "";
+  });
+
+  cardFormElement.querySelectorAll(".popup__input").forEach((input) => {
+    input.classList.remove("popup__input_invalid");
+  });
 };
 
 const handleLikeIcon = (evt) => {

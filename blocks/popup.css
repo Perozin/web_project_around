@@ -71,6 +71,8 @@
 }
 
 .popup__image {
+  max-width: 75vw;
+  max-height: 75vh;
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -141,6 +143,7 @@
   outline: none;
   margin: 54px auto 0;
   padding: 0;
+  position: relative;
 }
 
 /* input */
@@ -160,6 +163,10 @@
   padding: 0;
 }
 
+.popup__input_invalid {
+  border: 1px solid red;
+}
+
 .popup__input_type_name,
 .popup__input_type_card-name {
   margin: 0;
@@ -168,6 +175,19 @@
 .popup__input_type_activity,
 .popup__input_type_url {
   margin: 29.74px 0 0;
+}
+
+/* msg */
+
+.popup__error {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  color: red;
+  background-color: transparent;
+  position: absolute;
+  top: 18px;
+  left: 0;
 }
 
 .popup__line {
