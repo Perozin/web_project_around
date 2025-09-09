@@ -420,7 +420,7 @@
 
   .popup__input {
     width: 304.28px;
-    height: 23.01;
+    height: 23.01px;
     font-size: 11.89px;
     line-height: 14.44px;
   }
@@ -535,7 +535,7 @@
 
   .popup__input {
     width: 286.35px;
-    height: 21.65;
+    height: 21.65px;
     font-size: 11.18px;
     line-height: 13.58px;
   }
@@ -726,7 +726,7 @@
   }
 
   .popup__input-error_visible {
-    font-size: 9.33x;
+    font-size: 9.33px;
     line-height: 11.68px;
   }
 
