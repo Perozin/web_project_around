@@ -135,57 +135,6 @@ const fillProfileForm = () => {
   activityInput.value = profileActivity.textContent;
 };
 
-// old validdateInput
-
-// function validateInput(input) {
-//   const max = input.getAttribute("maxlength");
-//   const value = input.value.trim();
-//   const errorSpan = document.querySelector(`#error-${input.id}`);
-//   let isValid = true;
-
-//   if (!value) {
-//     errorSpan.textContent = "Preencha este campo.";
-//     input.classList.add("popup__input_invalid");
-//     isValid = false;
-//   } else if (value.length >= max) {
-//     errorSpan.textContent = `Máximo de ${max} caracteres permitidos.`;
-//     input.classList.add("popup__input_invalid");
-//     isValid = false;
-//   } else {
-//     errorSpan.textContent = "";
-//     input.classList.remove("popup__input_invalid");
-//   }
-
-//   return isValid;
-// }
-
-// document.querySelectorAll(".popup__input").forEach((input) => {
-//   input.addEventListener("input", () => validateInput(input));
-// });
-
-// document.querySelectorAll(".popup__form").forEach((form) => {
-//   form.addEventListener("submit", (e) => {
-//     let formIsValid = true;
-
-//     form.querySelectorAll(".popup__input").forEach((input) => {
-//       const isValid = validateInput(input);
-//       if (!isValid) {
-//         formIsValid = false;
-//       }
-//     });
-
-//     if (!formIsValid) {
-//       e.preventDefault();
-//     }
-//   });
-// });
-
-// old validdateInput
-
-// new validdateInput
-
-// const inputList = document.querySelectorAll(".popup__input");
-
 function hideInputError(input, errorMessage, inputErrorClass, errorClass) {
   input.classList.remove(inputErrorClass);
 
@@ -209,8 +158,6 @@ function checkIfInputIsValid(input, inputErrorClass, errorClass) {
     showInputError(input, errorMessage, inputErrorClass, errorClass);
   }
 }
-
-// new validdateInput
 
 // handlers
 
@@ -276,7 +223,6 @@ const renderCard = (data, wrap) => {
   wrap.prepend(getCardElement(data));
 };
 
-// new
 function hasInvalidInput(inputList) {
   const hasInvalidInput = inputList.some((input) => !input.validity.valid);
   return hasInvalidInput;
@@ -337,7 +283,6 @@ enableValidation({
   inputErrorClass: "popup__input_type_error",
   errorClass: "popup__input-error_visible",
 });
-// new
 
 // listeners
 
