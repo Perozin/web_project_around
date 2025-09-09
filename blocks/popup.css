@@ -4,7 +4,6 @@
 
 .popup {
   max-width: 1280px;
-  max-height: 750px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -243,7 +242,6 @@
 
   .popup {
     max-width: 1152px;
-    max-height: 675px;
     width: 90%;
   }
 
@@ -358,7 +356,6 @@
 
   .popup {
     max-width: 1088px;
-    max-height: 637.47px;
     width: 85%;
   }
 
@@ -473,7 +470,6 @@
 
   .popup {
     max-width: 1024px;
-    max-height: 599.92px;
     width: 80%;
   }
 
@@ -638,7 +634,6 @@
 
   .popup {
     max-width: 375px;
-    max-height: 665.58px;
     width: 90%;
   }
 
@@ -748,7 +743,6 @@
 
   .popup {
     max-width: 320px;
-    max-height: 568px;
     width: 100%;
   }
 
