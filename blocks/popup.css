@@ -136,20 +136,22 @@
 
 .popup__form {
   max-width: 358px;
-  max-height: 182.49px;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #ffffff;
   outline: none;
+  display: flex;
+  flex-direction: column;
   margin: 54px auto 0;
   padding: 0;
-  position: relative;
 }
 
 /* input */
 
 .popup__input {
   width: 358px;
+  height: 27.08px;
+  align-items: flex-start;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -158,58 +160,49 @@
   color: #000000;
   background-color: #ffffff;
   border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   outline: none;
   overflow: hidden;
-  padding: 0;
-}
-
-.popup__input_invalid {
-  border: 1px solid red;
 }
 
 .popup__input_type_name,
 .popup__input_type_card-name {
   margin: 0;
+  padding: 0 0 13.26px;
 }
 
 .popup__input_type_activity,
 .popup__input_type_url {
   margin: 29.74px 0 0;
+  padding: 0 0 13.34px;
 }
 
-/* msg */
+/* validation */
 
-.popup__error {
-  display: block;
-  font-size: 12px;
-  line-height: 15px;
-  color: red;
-  background-color: transparent;
-  position: absolute;
-  top: 18px;
-  left: 0;
+.popup__input_type_error {
+  border-bottom: 1px solid #ff0000;
 }
 
-.popup__line {
+.popup__input-error {
   max-width: 358px;
-  max-height: 0px;
-  width: 100%;
-  opacity: 0.2;
-  border: 1px solid #000000;
-  outline: none;
-  overflow: hidden;
+  height: 0.1px;
+  display: none;
+  margin: 5px 0 0;
   padding: 0;
 }
 
-.popup__line_name {
-  margin: 13.26px 0 0;
+.popup__input-error_visible {
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  background-color: transparent;
 }
 
-.popup__line_activity {
-  margin: 13.34px 0 0;
-}
-
-/* submit button */
+/* submit-button */
 
 .popup__button {
   max-width: 358px;
@@ -233,6 +226,14 @@
 .popup__button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+}
+
+.popup__button_disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px 0px #00000026;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* -------------  1152  ------------- */
@@ -297,7 +298,6 @@
 
   .popup__form {
     max-width: 322.2px;
-    max-height: 164.24px;
     margin: 48.6px auto 0;
   }
 
@@ -305,6 +305,7 @@
 
   .popup__input {
     width: 322.2px;
+    height: 24.37px;
     font-size: 12.6px;
     line-height: 15.3px;
   }
@@ -312,28 +313,33 @@
   .popup__input_type_name,
   .popup__input_type_card-name {
     margin: 0;
+    padding: 0 0 11.93px;
   }
 
   .popup__input_type_activity,
   .popup__input_type_url {
     margin: 26.76px 0 0;
+    padding: 0 0 12px;
   }
 
-  /* line */
+  /* validation */
 
-  .popup__line {
+  .popup__input_type_error {
+    border-bottom: 0.9px solid #ff0000;
+  }
+
+  .popup__input-error {
     max-width: 322.2px;
+    height: 0.09px;
+    margin: 4.5px 0 0;
   }
 
-  .popup__line_name {
-    margin: 11.93px 0 0;
+  .popup__input-error_visible {
+    font-size: 10.8px;
+    line-height: 13.5px;
   }
 
-  .popup__line_activity {
-    margin: 12px 0 0;
-  }
-
-  /* submit button */
+  /* submit-button */
 
   .popup__button {
     max-width: 322.2px;
@@ -407,7 +413,6 @@
 
   .popup__form {
     max-width: 304.28px;
-    max-height: 155.1px;
     margin: 45.89px auto 0;
   }
 
@@ -415,6 +420,7 @@
 
   .popup__input {
     width: 304.28px;
+    height: 23.01;
     font-size: 11.89px;
     line-height: 14.44px;
   }
@@ -422,25 +428,30 @@
   .popup__input_type_name,
   .popup__input_type_card-name {
     margin: 0;
+    padding: 0 0 11.26px;
   }
 
   .popup__input_type_activity,
   .popup__input_type_url {
     margin: 25.27px 0 0;
+    padding: 0 0 11.33px;
   }
 
-  /* line */
+  /* validation */
 
-  .popup__line {
+  .popup__input_type_error {
+    border-bottom: 0.84px solid #ff0000;
+  }
+
+  .popup__input-error {
     max-width: 304.28px;
+    height: 0.08px;
+    margin: 4.24px 0 0;
   }
 
-  .popup__line_name {
-    margin: 11.26px 0 0;
-  }
-
-  .popup__line_activity {
-    margin: 11.33px 0 0;
+  .popup__input-error_visible {
+    font-size: 10.19px;
+    line-height: 12.74px;
   }
 
   /* submit button */
@@ -517,7 +528,6 @@
 
   .popup__form {
     max-width: 286.35px;
-    max-height: 145.96px;
     margin: 43.18px auto 0;
   }
 
@@ -525,6 +535,7 @@
 
   .popup__input {
     width: 286.35px;
+    height: 21.65;
     font-size: 11.18px;
     line-height: 13.58px;
   }
@@ -532,25 +543,30 @@
   .popup__input_type_name,
   .popup__input_type_card-name {
     margin: 0;
+    padding: 0 0 10.59px;
   }
 
   .popup__input_type_activity,
   .popup__input_type_url {
     margin: 23.78px 0 0;
+    padding: 0 0 10.66px;
   }
 
-  /* line */
+  /* validation */
 
-  .popup__line {
+  .popup__input_type_error {
+    border-bottom: 0.79px solid #ff0000;
+  }
+
+  .popup__input-error {
     max-width: 286.35px;
+    height: 0.07px;
+    margin: 3.99px 0 0;
   }
 
-  .popup__line_name {
-    margin: 10.59px 0 0;
-  }
-
-  .popup__line_activity {
-    margin: 10.66px 0 0;
+  .popup__input-error_visible {
+    font-size: 9.58px;
+    line-height: 11.98px;
   }
 
   /* submit button */
@@ -674,7 +690,7 @@
 
   .popup__form {
     max-width: 278.88px;
-    max-height: 292.95px;
+    height: 292.95px;
     margin: 89.05px auto 0;
   }
 
@@ -682,37 +698,43 @@
 
   .popup__input {
     width: 278.88px;
+    height: 21.09px;
   }
 
   .popup__input_type_name,
   .popup__input_type_card-name {
     margin: 0;
+    padding: 0 0 10.54px;
   }
 
   .popup__input_type_activity,
   .popup__input_type_url {
     margin: 35.15px 0 0;
+    padding: 0 0 10.54px;
   }
 
-  /* line */
+  /* validation */
 
-  .popup__line {
+  .popup__input_type_error {
+    border-bottom: 0.77px solid #ff0000;
+  }
+
+  .popup__input-error {
     max-width: 278.88px;
+    height: 0.07px;
+    margin: 3.89px 0 0;
   }
 
-  .popup__line_name {
-    margin: 10.54px 0 0;
-  }
-
-  .popup__line_activity {
-    margin: 10.54px 0 0;
+  .popup__input-error_visible {
+    font-size: 9.33x;
+    line-height: 11.68px;
   }
 
   /* submit button */
 
   .form__submit-button {
     max-width: 278.88px;
-    max-height: 53.9px;
+    height: 53.9px;
     font-size: 16.4px;
     line-height: 19.92px;
     margin: 53.9px auto 0;
@@ -742,7 +764,7 @@
 
   .popup__content {
     max-width: 282px;
-    max-height: 322px;
+    height: 322px;
     width: 87.4%;
     margin: 123px auto 0;
   }
@@ -780,7 +802,7 @@
 
   .popup__form {
     max-width: 238px;
-    max-height: 250px;
+    height: 250px;
     margin: 76px auto 0;
   }
 
@@ -788,37 +810,43 @@
 
   .popup__input {
     width: 238px;
+    height: 18px;
   }
 
   .popup__input_type_name,
   .popup__input_type_card-name {
     margin: 0;
+    padding: 0 0 9px;
   }
 
   .popup__input_type_activity,
   .popup__input_type_url {
     margin: 30px 0 0;
+    padding: 0 0 9px;
   }
 
-  /* line */
+  /* validation */
 
-  .popup__line {
+  .popup__input_type_error {
+    border-bottom: 0.66px solid #ff0000;
+  }
+
+  .popup__input-error {
     max-width: 238px;
+    height: 0.06px;
+    margin: 3.32px 0 0;
   }
 
-  .popup__line_name {
-    margin: 9px 0 0;
-  }
-
-  .popup__line_activity {
-    margin: 9px 0 0;
+  .popup__input-error_visible {
+    font-size: 7.97px;
+    line-height: 9.97px;
   }
 
   /* submit button */
 
   .form__submit-button {
     max-width: 238px;
-    max-height: 46px;
+    height: 46px;
     font-size: 14px;
     line-height: 17px;
     margin: 46px auto 0;

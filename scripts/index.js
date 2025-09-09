@@ -135,48 +135,82 @@ const fillProfileForm = () => {
   activityInput.value = profileActivity.textContent;
 };
 
-function validateInput(input) {
-  const max = input.getAttribute("maxlength");
-  const value = input.value.trim();
-  const errorSpan = document.querySelector(`#error-${input.id}`);
-  let isValid = true;
+// old validdateInput
 
-  if (!value) {
-    errorSpan.textContent = "Preencha este campo.";
-    input.classList.add("popup__input_invalid");
-    isValid = false;
-  } else if (value.length >= max) {
-    errorSpan.textContent = `Máximo de ${max} caracteres permitidos.`;
-    input.classList.add("popup__input_invalid");
-    isValid = false;
-  } else {
-    errorSpan.textContent = "";
-    input.classList.remove("popup__input_invalid");
-  }
+// function validateInput(input) {
+//   const max = input.getAttribute("maxlength");
+//   const value = input.value.trim();
+//   const errorSpan = document.querySelector(`#error-${input.id}`);
+//   let isValid = true;
 
-  return isValid;
+//   if (!value) {
+//     errorSpan.textContent = "Preencha este campo.";
+//     input.classList.add("popup__input_invalid");
+//     isValid = false;
+//   } else if (value.length >= max) {
+//     errorSpan.textContent = `Máximo de ${max} caracteres permitidos.`;
+//     input.classList.add("popup__input_invalid");
+//     isValid = false;
+//   } else {
+//     errorSpan.textContent = "";
+//     input.classList.remove("popup__input_invalid");
+//   }
+
+//   return isValid;
+// }
+
+// document.querySelectorAll(".popup__input").forEach((input) => {
+//   input.addEventListener("input", () => validateInput(input));
+// });
+
+// document.querySelectorAll(".popup__form").forEach((form) => {
+//   form.addEventListener("submit", (e) => {
+//     let formIsValid = true;
+
+//     form.querySelectorAll(".popup__input").forEach((input) => {
+//       const isValid = validateInput(input);
+//       if (!isValid) {
+//         formIsValid = false;
+//       }
+//     });
+
+//     if (!formIsValid) {
+//       e.preventDefault();
+//     }
+//   });
+// });
+
+// old validdateInput
+
+// new validdateInput
+
+// const inputList = document.querySelectorAll(".popup__input");
+
+function hideInputError(input, errorMessage, inputErrorClass, errorClass) {
+  input.classList.remove(inputErrorClass);
+
+  errorMessage.classList.remove(errorClass);
 }
 
-document.querySelectorAll(".popup__input").forEach((input) => {
-  input.addEventListener("input", () => validateInput(input));
-});
+function showInputError(input, errorMessage, inputErrorClass, errorClass) {
+  input.classList.add(inputErrorClass);
 
-document.querySelectorAll(".popup__form").forEach((form) => {
-  form.addEventListener("submit", (e) => {
-    let formIsValid = true;
+  errorMessage.classList.add(errorClass);
+  errorMessage.textContent = input.validationMessage;
+}
 
-    form.querySelectorAll(".popup__input").forEach((input) => {
-      const isValid = validateInput(input);
-      if (!isValid) {
-        formIsValid = false;
-      }
-    });
+function checkIfInputIsValid(input, inputErrorClass, errorClass) {
+  const isValid = input.validity.valid;
+  const errorMessage = document.querySelector(`#${input.name}-error`);
 
-    if (!formIsValid) {
-      e.preventDefault();
-    }
-  });
-});
+  if (isValid) {
+    hideInputError(input, errorMessage, inputErrorClass, errorClass);
+  } else {
+    showInputError(input, errorMessage, inputErrorClass, errorClass);
+  }
+}
+
+// new validdateInput
 
 // handlers
 
@@ -241,6 +275,69 @@ const handlePreviewPicture = (data) => {
 const renderCard = (data, wrap) => {
   wrap.prepend(getCardElement(data));
 };
+
+// new
+function hasInvalidInput(inputList) {
+  const hasInvalidInput = inputList.some((input) => !input.validity.valid);
+  return hasInvalidInput;
+}
+
+function toggleSubmitButtonState(
+  inputList,
+  submitButtonElement,
+  inactiveButtonClass
+) {
+  if (hasInvalidInput(inputList)) {
+    submitButtonElement.disabled = true;
+    submitButtonElement.classList.add(inactiveButtonClass);
+  } else {
+    submitButtonElement.disabled = false;
+    submitButtonElement.classList.remove(inactiveButtonClass);
+  }
+}
+
+function enableValidation({
+  formSelector,
+  inputSelector,
+  submitButtonSelector,
+  inactiveButtonClass,
+  inputErrorClass,
+  errorClass,
+}) {
+  const formElements = document.querySelectorAll(formSelector);
+
+  formElements.forEach((form) => {
+    const inputList = Array.from(form.querySelectorAll(inputSelector));
+    const submitButtonElement = form.querySelector(submitButtonSelector);
+
+    toggleSubmitButtonState(
+      inputList,
+      submitButtonElement,
+      inactiveButtonClass
+    );
+
+    inputList.forEach((input) => {
+      input.addEventListener("input", () => {
+        checkIfInputIsValid(input, inputErrorClass, errorClass);
+        toggleSubmitButtonState(
+          inputList,
+          submitButtonElement,
+          inactiveButtonClass
+        );
+      });
+    });
+  });
+}
+
+enableValidation({
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__button",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__input-error_visible",
+});
+// new
 
 // listeners
 

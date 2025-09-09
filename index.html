@@ -80,29 +80,31 @@
             class="popup__close-button"
           ></button>
           <h3 class="popup__title">Editar perfil</h3>
-          <form class="popup__form" id="edit-profile-form">
+          <form class="popup__form" id="edit-profile-form" novalidate>
             <input
               type="text"
               class="popup__input popup__input_type_name"
               id="name"
               name="name"
               placeholder="Nome"
+              minlength="2"
               maxlength="40"
               required
             />
-            <span class="popup__error" id="error-profile-name"></span>
-            <hr class="popup__line popup__line_name" />
+            <span class="popup__input-error" id="name-error"></span>
+            <!-- <hr class="popup__line" /> -->
             <input
               type="text"
               class="popup__input popup__input_type_activity"
               id="activity"
               name="activity"
-              placeholder="Sobre mim"
-              maxlength="60"
+              placeholder="Sobre"
+              minlength="2"
+              maxlength="200"
               required
             />
-            <span class="popup__error" id="error-profile-activity"></span>
-            <hr class="popup__line popup__line_activity" />
+            <span class="popup__input-error" id="activity-error"></span>
+            <!-- <hr class="popup__line" /> -->
             <button type="submit" class="popup__button">Salvar</button>
           </form>
         </div>
@@ -116,29 +118,29 @@
             class="popup__close-button"
           ></button>
           <h3 class="popup__title">Novo local</h3>
-          <form class="popup__form" id="new-card-form">
+          <form class="popup__form" id="new-card-form" novalidate>
             <input
               type="text"
               class="popup__input popup__input_type_card-name"
               id="title"
               name="title"
               placeholder="Título"
+              minlength="2"
               maxlength="30"
               required
             />
-            <span class="popup__error" id="error-title"></span>
-            <hr class="popup__line popup__line_name" />
+            <span class="popup__input-error" id="title-error"></span>
+            <!-- <hr class="popup__line" /> -->
             <input
-              type="text"
+              type="url"
               class="popup__input popup__input_type_url"
-              id="URL"
-              name="URL"
+              id="url"
+              name="url"
               placeholder="Link de imagem"
-              maxlength="200"
               required
             />
-            <span class="popup__error" id="error-url"></span>
-            <hr class="popup__line popup__line_activity" />
+            <span class="popup__input-error" id="url-error"></span>
+            <!-- <hr class="popup__line" /> -->
             <button type="submit" class="popup__button">Criar</button>
           </form>
         </div>

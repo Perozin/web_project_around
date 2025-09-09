@@ -20,9 +20,9 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
+  /* grid-template-areas:
     "valey lake mountain"
-    "alps park province";
+    "alps park province"; */
   row-gap: 20px;
   column-gap: 17px;
   margin: 0;
@@ -121,10 +121,10 @@
     max-width: 527.89px;
     max-height: 5397.51px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
+    /* grid-template-areas:
       "valey lake"
       "mountain alps"
-      "park province";
+      "park province"; */
     row-gap: 39.04px;
     column-gap: 33.92px;
   }
@@ -166,13 +166,13 @@
     max-width: 475.82px;
     height: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
+    /* grid-template-areas:
       "valey"
       "lake"
       "mountain"
       "alps"
       "park"
-      "province";
+      "province"; */
     row-gap: 29.32px;
   }
 }
