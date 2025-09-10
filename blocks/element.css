@@ -314,7 +314,8 @@
   /* description */
 
   .element__description {
-    max-width: 214.32px;
+    /* max-width: 214.32px; */
+    max-width: 190px;
     max-height: 20.02px;
     margin: 21.73px auto 26.96px;
   }
