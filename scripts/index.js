@@ -135,30 +135,6 @@ const fillProfileForm = () => {
   activityInput.value = profileActivity.textContent;
 };
 
-function hideInputError(input, errorMessage, inputErrorClass, errorClass) {
-  input.classList.remove(inputErrorClass);
-
-  errorMessage.classList.remove(errorClass);
-}
-
-function showInputError(input, errorMessage, inputErrorClass, errorClass) {
-  input.classList.add(inputErrorClass);
-
-  errorMessage.classList.add(errorClass);
-  errorMessage.textContent = input.validationMessage;
-}
-
-function checkIfInputIsValid(input, inputErrorClass, errorClass) {
-  const isValid = input.validity.valid;
-  const errorMessage = document.querySelector(`#${input.name}-error`);
-
-  if (isValid) {
-    hideInputError(input, errorMessage, inputErrorClass, errorClass);
-  } else {
-    showInputError(input, errorMessage, inputErrorClass, errorClass);
-  }
-}
-
 // handlers
 
 const handleOpenEditModal = () => {
@@ -186,6 +162,22 @@ const handleProfileFormSubmit = (evt) => {
 const handleFormCardSubmit = (evt) => {
   evt.preventDefault();
 
+  const inputList = Array.from(
+    cardFormElement.querySelectorAll(".popup__input")
+  );
+  const isFormValid = !hasInvalidInput(inputList);
+
+  if (!isFormValid) {
+    inputList.forEach((input) => {
+      checkIfInputIsValid(
+        input,
+        "popup__input_type_error",
+        "popup__input-error_visible"
+      );
+    });
+
+    return;
+  }
   renderCard(
     { name: cardNameInput.value, link: cardLinkInput.value },
     cardsWrap
