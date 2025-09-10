@@ -1,3 +1,5 @@
+import { resetValidate } from "./validate.js";
+
 const initialCards = [
   {
     name: "Vale de Yosemite",
@@ -81,6 +83,14 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("popup_is-opened");
+  resetValidate({
+    formSelector: ".popup__form",
+    inputSelector: ".popup__input",
+    submitButtonSelector: ".popup__button",
+    inactiveButtonClass: "popup__button_disabled",
+    inputErrorClass: "popup__input_type_error",
+    errorClass: "popup__input-error_visible",
+  });
 }
 
 function enableModalClose(modal) {
@@ -162,22 +172,8 @@ const handleProfileFormSubmit = (evt) => {
 const handleFormCardSubmit = (evt) => {
   evt.preventDefault();
 
-  const inputList = Array.from(
-    cardFormElement.querySelectorAll(".popup__input")
-  );
-  const isFormValid = !hasInvalidInput(inputList);
+  function card() {}
 
-  if (!isFormValid) {
-    inputList.forEach((input) => {
-      checkIfInputIsValid(
-        input,
-        "popup__input_type_error",
-        "popup__input-error_visible"
-      );
-    });
-
-    return;
-  }
   renderCard(
     { name: cardNameInput.value, link: cardLinkInput.value },
     cardsWrap

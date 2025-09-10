@@ -99,3 +99,33 @@ function toggleSubmitButtonState(
     submitButtonElement.classList.remove(inactiveButtonClass);
   }
 }
+
+function resetValidate({
+  formSelector,
+  inputSelector,
+  submitButtonSelector,
+  inactiveButtonClass,
+  inputErrorClass,
+  errorClass,
+}) {
+  const formElements = document.querySelectorAll(formSelector);
+
+  formElements.forEach((form) => {
+    form.reset();
+
+    const inputList = Array.from(form.querySelectorAll(inputSelector));
+    const submitButtonElement = form.querySelector(submitButtonSelector);
+
+    inputList.forEach((input) => {
+      hideInputError(input, inputErrorClass, errorClass);
+
+      toggleSubmitButtonState(
+        inputList,
+        submitButtonElement,
+        inactiveButtonClass
+      );
+    });
+  });
+}
+
+export { resetValidate };
