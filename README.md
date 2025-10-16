@@ -1,6 +1,6 @@
 # 🌐 Tripleten web_project_around
 
-![Preview do projeto](./images/preview-around.png)
+![Preview do projeto](../images/preview-around.png)
 
 > Click on the image above to access the project in production:
 
