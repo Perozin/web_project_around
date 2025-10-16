@@ -4,7 +4,7 @@
 
 > Click on the image above to access the project in production:
 
-> 👉 [https://perozin.github.io/web_project_around](https://perozin.github.io/web_project_around)
+> 👉 [https://perozin.github.io/web_project_around/src](https://perozin.github.io/web_project_around/src)
 
 ---
 
@@ -127,7 +127,7 @@ web_project_homeland/
 ## 📌 How to view the project
 
 You can directly access the project hosted on GitHub Pages:  
-👉 **[perozin.github.io/web_project_around](https://perozin.github.io/web_project_around/)**
+👉 **[perozin.github.io/web_project_around](https://perozin.github.io/web_project_around/src)**
 
 Or clone and run locally:
 
