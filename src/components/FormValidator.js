@@ -1,69 +1,43 @@
 export class FormValidator {
-  constructor(
-    {
-      formSelector,
-      inputSelector,
-      submitButtonSelector,
-      inactiveButtonClass,
-      inputErrorClass,
-      errorClass,
-    },
-    formElement
-  ) {
-    this._formSelector = formSelector;
-    this._inputSelector = inputSelector;
-    this._submitButtonSelector = submitButtonSelector;
-    this._inactiveButtonClass = inactiveButtonClass;
-    this._inputErrorClass = inputErrorClass;
-    this._errorClass = errorClass;
+  constructor(config, formElement) {
+    this._config = config;
     this._formElement = formElement;
-  }
-
-  _checkIfInputIsValid(input) {
-    if (!input.validity.valid) {
-      this._showInputError(input, input.validationMessage);
-    } else if (input.type === "url" && !isImageUrl(input.value)) {
-      this._showInputError(
-        input,
-        "A URL precisa ser de uma imagem (jpg, png, gif, etc.)"
-      );
-    } else {
-      this._hideInputError(input);
-    }
-  }
-
-  _showInputError(input, message) {
-    const errorElement = this._formElement.querySelector(
-      `#${input.name}-error`
+    this._inputList = Array.from(
+      this._formElement.querySelectorAll(this._config.inputSelector)
     );
-    input.classList.add(this._inputErrorClass);
-    if (errorElement) {
-      errorElement.textContent = message;
-      errorElement.classList.add(this._errorClass);
-    }
-  }
-
-  _hideInputError(input) {
-    const errorElement = this._formElement.querySelector(
-      `#${input.name}-error`
+    this._buttonElement = this._formElement.querySelector(
+      this._config.submitButtonSelector
     );
-    input.classList.remove(this._inputErrorClass);
-    if (errorElement) {
-      errorElement.textContent = "";
-      errorElement.classList.remove(this._errorClass);
-    }
   }
 
-  _checkIfInputIsValid(input) {
-    if (!input.validity.valid) {
-      this._showInputError(input, input.validationMessage);
-    } else if (input.type === "url" && !this._isImageUrl(input.value)) {
+  _showInputError(inputElement, errorMessage) {
+    const errorElement = this._formElement.querySelector(
+      `#${inputElement.id}-error`
+    );
+    inputElement.classList.add(this._config.inputErrorClass);
+    errorElement.textContent = errorMessage;
+    errorElement.classList.add(this._config.errorClass);
+  }
+
+  _hideInputError(inputElement) {
+    const errorElement = this._formElement.querySelector(
+      `#${inputElement.id}-error`
+    );
+    inputElement.classList.remove(this._config.inputErrorClass);
+    errorElement.classList.remove(this._config.errorClass);
+    errorElement.textContent = "";
+  }
+
+  _checkInputValidity(inputElement) {
+    if (inputElement.type === "url" && !this._isImageUrl(inputElement.value)) {
       this._showInputError(
-        input,
-        "A URL precisa ser de uma imagem (jpg, png, gif, etc.)"
+        inputElement,
+        "A URL precisa ser de uma imagem válida (jpg, png, gif, etc.)"
       );
+    } else if (!inputElement.validity.valid) {
+      this._showInputError(inputElement, inputElement.validationMessage);
     } else {
-      this._hideInputError(input);
+      this._hideInputError(inputElement);
     }
   }
 
@@ -74,48 +48,42 @@ export class FormValidator {
 
   _hasInvalidInput() {
     return this._inputList.some(
-      (input) =>
-        !input.validity.valid ||
-        (input.type === "url" && !this._isImageUrl(input.value))
+      (inputElement) =>
+        !inputElement.validity.valid ||
+        (inputElement.type === "url" && !this._isImageUrl(inputElement.value))
     );
   }
 
-  _toggleSubmitButtonState() {
+  _toggleButtonState() {
     if (this._hasInvalidInput()) {
-      this._submitButtonElement.disabled = true;
-      this._submitButtonElement.classList.add(this._inactiveButtonClass);
+      this._buttonElement.disabled = true;
+      this._buttonElement.classList.add(this._config.inactiveButtonClass);
     } else {
-      this._submitButtonElement.disabled = false;
-      this._submitButtonElement.classList.remove(this._inactiveButtonClass);
+      this._buttonElement.disabled = false;
+      this._buttonElement.classList.remove(this._config.inactiveButtonClass);
     }
   }
 
   _setEventListeners() {
-    this._inputList = Array.from(
-      this._formElement.querySelectorAll(this._inputSelector)
-    );
-    this._submitButtonElement = this._formElement.querySelector(
-      this._submitButtonSelector
-    );
-    this._toggleSubmitButtonState();
+    this._toggleButtonState();
 
-    this._inputList.forEach((input) => {
-      input.addEventListener("input", () => {
-        this._checkIfInputIsValid(input);
-        this._toggleSubmitButtonState();
+    this._inputList.forEach((inputElement) => {
+      inputElement.addEventListener("input", () => {
+        this._checkInputValidity(inputElement);
+        this._toggleButtonState();
       });
     });
   }
 
   enableValidation() {
+    this._formElement.addEventListener("submit", (evt) => evt.preventDefault());
     this._setEventListeners();
   }
 
   resetValidation() {
-    this._inputList.forEach((input) => {
-      this._hideInputError(input);
-      input.value = "";
+    this._inputList.forEach((inputElement) => {
+      this._hideInputError(inputElement);
     });
-    this._toggleSubmitButtonState();
+    this._toggleButtonState();
   }
 }

@@ -2,8 +2,8 @@ export class Card {
   constructor(data, cardSelector, handleImageClick) {
     this._name = data.name;
     this._link = data.link;
-    this._handleImageClick = handleImageClick;
     this._cardSelector = cardSelector;
+    this._handleImageClick = handleImageClick;
   }
 
   _getTemplate() {
@@ -15,38 +15,16 @@ export class Card {
     return template;
   }
 
-  generateCard() {
-    this._cardElement = this._getTemplate();
-
-    this._cardImage = this._cardElement.querySelector(".element__image");
-    this._cardImage.src = this._link;
-    this._cardImage.alt = this._name;
-
-    this._cardTitle = this._cardElement.querySelector(".element__title");
-    this._cardTitle.textContent = this._name;
-
-    this._likeButton = this._cardElement.querySelector(".element__like-button");
-    this._deleteButton = this._cardElement.querySelector(
-      ".element__delete-button"
-    );
-
-    this._setEventListeners();
-
-    return this._cardElement;
-  }
-
   _setEventListeners() {
-    this._likeButton.addEventListener("click", () => {
-      this._handleLikeIcon();
-    });
+    this._likeButton.addEventListener("click", () => this._handleLikeIcon());
 
-    this._deleteButton.addEventListener("click", () => {
-      this._handleDeleteCard();
-    });
-
-    this._cardImage.addEventListener("click", () =>
-      this._handleImageClick({ name: this._name, link: this._link })
+    this._deleteButton.addEventListener("click", () =>
+      this._handleDeleteCard()
     );
+
+    this._imageElement.addEventListener("click", () => {
+      this._handleImageClick(this._name, this._link);
+    });
   }
 
   _handleLikeIcon() {
@@ -54,7 +32,23 @@ export class Card {
   }
 
   _handleDeleteCard() {
-    this._cardElement.remove();
-    this._cardElement = null;
+    this._element.remove();
+    this._element = null;
+  }
+
+  generateCard() {
+    this._element = this._getTemplate();
+
+    this._imageElement = this._element.querySelector(".element__image");
+    this._likeButton = this._element.querySelector(".element__like-button");
+    this._deleteButton = this._element.querySelector(".element__delete-button");
+
+    this._element.querySelector(".element__title").textContent = this._name;
+    this._imageElement.src = this._link;
+    this._imageElement.alt = this._name;
+
+    this._setEventListeners();
+
+    return this._element;
   }
 }
