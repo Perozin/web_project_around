@@ -239,7 +239,7 @@ cd web_project_around/src
 
 - Desenvolvedor Full-Stack (em formação) – Bootcamp TripleTen
 - GitHub: [https://github.com/Perozin](https://github.com/Perozin)
-- LinkedIn: [https://www.linkedin.com/in/marcio-perozin-58162334](https://www.linkedin.com/in/marcio-perozin-58162334)
+- LinkedIn: [https://www.linkedin.com/in/marcio-perozin](https://www.linkedin.com/in/marcio-perozin)
 
 **PT-BR:** Desenvolvido por Márcio Persuin – foco em **POO, modularização e boas práticas de front-end moderno**
 **EN:** Developed by Márcio Persuin – focused on **OOP, modularization, and modern front-end best practices**
