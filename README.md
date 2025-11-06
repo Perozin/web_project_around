@@ -1,252 +1,172 @@
-# 🌍 web_project_around
+# 🌍 **web_project_around**
 
-![Preview do projeto](./src/images/preview-around.png)
+[![Preview do projeto](./src/images/preview-around.png)](https://perozin.github.io/web_project_around/src)
 
-> Clique na imagem acima para acessar o projeto em produção / Click on the image above to access the project in production:
-
-> 👉 [https://perozin.github.io/web_project_around/src](https://perozin.github.io/web_project_around/src)
-
-### 🗣️ README BILÍNGUE — Português / English
+> 🎯 **Clique na imagem acima para acessar o projeto publicado**  
+> 💡 **Click on the image above to access the published project**
 
 ---
 
-## 🇧🇷 **Descrição do Projeto**
-
-O **web_project_around** é uma aplicação web interativa desenvolvida durante o processo de aprendizagem de **Desenvolvimento Web Full Stack**.
-Inicialmente concebido sob o **paradigma da Programação Funcional**, o projeto foi **refatorado para o paradigma da Programação Orientada a Objetos (POO)**, promovendo melhor **organização, reutilização e escalabilidade do código**.
-
-O projeto implementa conceitos como **herança, polimorfismo e encapsulamento**, além de aplicar **boas práticas de modularização de código JavaScript ES6+**, **metodologia BEM (Block Element Modifier)** para estruturação CSS e **componentização** na camada de scripts.
+## 🗣️ **README BILÍNGUE — Português / English**
 
 ---
 
-## 🇺🇸 **Project Description**
+## 🇧🇷 1. **Nome do Projeto**
 
-**web_project_around** is an interactive web application developed as part of the **Full Stack Web Development** learning path.
-Originally designed following the **Functional Programming paradigm**, it has now been **refactored into the Object-Oriented Programming (OOP) paradigm**, ensuring better **organization, reusability, and scalability**.
-
-The project demonstrates the use of **inheritance, polymorphism, and encapsulation**, along with **modular JavaScript ES6+ architecture**, **BEM methodology** for CSS structuring, and a **component-based script design**.
+**web_project_around**
 
 ---
 
-## 🧩 **Principais Funcionalidades / Key Features**
+## 🇧🇷 2. **Descrição do Projeto**
 
-- Exibição dinâmica de cards com imagens e legendas.
-- Abertura de popups com formulários e visualização de imagem ampliada.
-- Validação de formulários com mensagens de erro em tempo real.
-- Criação, edição e exclusão de elementos dinâmicos na interface.
-- Estrutura modularizada e orientada a objetos.
-- Interface responsiva e adaptada para múltiplos tamanhos de tela.
+O **web_project_around** é uma aplicação web interativa desenvolvida durante o processo de aprendizagem do **Bootcamp de Desenvolvimento Web Full Stack**.
 
----
+O projeto permite **visualizar, adicionar, editar e excluir cards** com imagens e legendas, além de **abrir popups interativos** para edição de perfil, atualização de avatar e visualização ampliada de imagens.
 
-- Dynamic display of cards with images and captions.
-- Opening popups with forms and enlarged image display.
-- Form validation with real-time error messages.
-- Creation, editing, and deletion of dynamic elements in the interface.
-- Modularized and object-oriented structure.
-- Responsive interface adapted to multiple screen sizes.
+Inicialmente concebido sob o **paradigma da Programação Funcional**, o projeto foi **refatorado para o paradigma da Programação Orientada a Objetos (POO)**, promovendo **melhor organização, reutilização e escalabilidade do código**.
+
+O código aplica conceitos como **herança, polimorfismo e encapsulamento**, além de utilizar **modularização ES6+**, a **metodologia BEM (Block Element Modifier)** para o CSS e uma **estrutura componentizada** na camada de scripts.
 
 ---
 
-## 🏗️ **Estrutura do Projeto / Project Structure**
+## 🇺🇸 1. **Project Name**
+
+**web_project_around**
+
+---
+
+## 🇺🇸 2. **Project Description**
+
+**web_project_around** is an interactive web application developed during the **Full Stack Web Development Bootcamp** learning journey.
+
+It allows users to **view, add, edit, and delete cards** with images and captions, as well as **open interactive popups** for profile editing, avatar updating, and image zoom preview.
+
+Originally designed using the **Functional Programming paradigm**, it was later **refactored into an Object-Oriented Programming (OOP) architecture**, improving **organization, reusability, and scalability**.
+
+It demonstrates key OOP principles such as **inheritance, polymorphism, and encapsulation**, and implements **ES6+ modularization**, the **BEM methodology** for CSS, and **component-based JavaScript structure**.
+
+---
+
+## ⚙️ 3. **Tecnologias e Técnicas Utilizadas / Technologies & Techniques**
+
+| Categoria / Category                      | Tecnologias e Técnicas / Technologies & Techniques                                                                |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Front-end**                             | HTML5, CSS3 (BEM), JavaScript (ES6+)                                                                              |
+| **Paradigma / Paradigm**                  | Programação Orientada a Objetos / Object-Oriented Programming                                                     |
+| **Arquitetura / Architecture**            | Módulos ES6 (`import` / `export`), Componentização                                                                |
+| **Conceitos de POO / OOP Concepts**       | Herança, Polimorfismo, Encapsulamento e Abstração / Inheritance, Polymorphism, Encapsulation, and Abstraction     |
+| **Layout Responsivo / Responsive Layout** | Media Queries, Flexbox, Grid Layout                                                                               |
+| **Ambiente / Environment**                | Visual Studio Code (.vscode configurado), Git + GitHub                                                            |
+| **Boas Práticas / Best Practices**        | Modularização, Reutilização, Semântica e Escalabilidade / Modularization, Reusability, Semantics, and Scalability |
+
+---
+
+## 🎥 4. **Demonstração em Vídeo / Video Demonstration**
+
+🔗 https://www.loom.com/share/9f4b63da251f47d2b03a94cfd202466b
+
+---
+
+## 🧠 5. **Conceitos de POO Aplicados / OOP Concepts Implemented**
+
+| Conceito / Concept                 | Descrição / Description                                                                                        | Exemplo / Example                                                 |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Herança / Inheritance**          | Reaproveitamento de código por meio de classes derivadas / Code reuse through derived classes                  | `PopupWithForm` e `PopupWithImage` herdam de `Popup`              |
+| **Polimorfismo / Polymorphism**    | Sobrescrita e adaptação de métodos herdados / Overriding and adapting inherited methods                        | `open()` e `close()` redefinidos conforme o tipo de popup         |
+| **Encapsulamento / Encapsulation** | Organização e proteção de propriedades internas / Organization and protection of internal properties           | Uso de atributos privados com prefixo `_`                         |
+| **Abstração / Abstraction**        | Separação da lógica em classes genéricas e específicas / Separation of logic into generic and specific classes | `Card`, `Section`, `FormValidator` são classes coesas e autônomas |
+
+---
+
+## 🏗️ 6. **Estrutura de Arquivos / File Structure (BEM & Modularization)**
 
 ```
 web_project_around/
 ├── .vscode/
 │   ├── extensions.json
 │   └── settings.json
-│
 ├── src/
-│   ├── components/
-│   │   ├── Card.js
-│   │   ├── FormValidator.js
-│   │   ├── Popup.js
-│   │   ├── PopupWithForm.js
-│   │   ├── PopupWithImage.js
-│   │   └── Section.js
-│   │
-│   ├── pages/
-│   │   ├── index.js
-│   │   └── index.css
-│   │
-│   ├── images/
-│   │   └── [project images]
-│   │
-│   ├── blocks/
-│   │   ├── content.css
-│   │   ├── element.css
-│   │   ├── elements.css
-│   │   ├── footer.css
-│   │   ├── form.css
-│   │   ├── header.css
-│   │   ├── modal.css
-│   │   ├── page.css
-│   │   ├── profile.css
-│   │   └── root.css
-│   │
-│   ├── vendor/
-│   │   ├── fonts/
-│   │   ├── fonts.css
-│   │   └── normalize.css
-│   │
-│   └── utils/
-│       ├── constants.js
-│       └── util.js
-│
+│   ├── blocks/ → Estrutura CSS BEM
+│   ├── components/ → Classes JS (OOP)
+│   ├── pages/ → Scripts e estilos principais
+│   ├── utils/ → Constantes e funções auxiliares
+│   └── images/ → Recursos visuais do projeto
+├── index.html
 ├── .editorconfig
 ├── .gitignore
 ├── .prettierignore
 ├── favicon.ico
-├── index.html
 └── README.md
 ```
 
 ---
 
-## ⚙️ **Tecnologias Utilizadas / Technologies Used**
+## 🧩 7. **Principais Funcionalidades / Key Features**
 
-- **HTML5** – estrutura semântica e acessível
-- **CSS3 (BEM)** – metodologia de modularização e escalabilidade
-- **JavaScript (ES6+)** – código moderno, orientado a objetos
-- **POO (OOP)** – aplicação de herança, polimorfismo e encapsulamento
-- **Módulos JS (`import` / `export`)**
-- **Boas práticas de componentização e reutilização**
-- **VS Code** como ambiente de desenvolvimento (configurado via `.vscode`)
-- Git + GitHub
-- Media Queries
-- CSS Flexbox e Grid Layout
-- Web design responsivo
+✅ Exibição dinâmica de cards com imagens e legendas  
+✅ Popups interativos para formulários e imagens ampliadas  
+✅ Validação de formulários com mensagens em tempo real  
+✅ Criação, edição e exclusão de elementos dinâmicos  
+✅ Estrutura modularizada e orientada a objetos  
+✅ Interface responsiva para múltiplos tamanhos de tela
 
 ---
 
-- **HTML5** – semantic and accessible structure
-- **CSS3 (BEM)** – modularization and scalability methodology
-- **JavaScript (ES6+)** – modern, object-oriented code
-- **OOP (Originally OOP)** – application of inheritance, polymorphism, and encapsulation
-- **JS modules (`import` / `export`)**
-- **Good practices for componentization and reuse**
-- **VS Code** as a development environment (configured via `.vscode`)
-- Git + GitHub
-- Media Queries
-- CSS Flexbox and Grid Layout
-- Responsive web design
-
----
-
-## 🧠 **Conceitos de POO Aplicados / OOP Concepts Implemented**
-
-| Conceito                           | Descrição                                                  | Exemplo de Implementação                                            |
-| ---------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
-| **Herança (Inheritance)**          | Reaproveitamento de código através de classes derivadas.   | `PopupWithForm` e `PopupWithImage` herdam de `Popup`.               |
-| **Polimorfismo (Polymorphism)**    | Sobrescrita e adaptação de métodos herdados.               | Métodos `open()` e `close()` redefinidos conforme o tipo de popup.  |
-| **Encapsulamento (Encapsulation)** | Organização e proteção de propriedades e métodos internos. | Métodos e atributos privados com prefixo `_`.                       |
-| **Abstração (Abstraction)**        | Separação da lógica em classes genéricas e específicas.    | `Card`, `Section` e `FormValidator` são classes autônomas e coesas. |
-
----
-
-| Concept           | Description                                                     | Implementation Example                                                      |
-| ----------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Inheritance**   | Code reuse through derived classes.                             | `PopupWithForm` and `PopupWithImage` inherit from `Popup`.                  |
-| **Polymorphism**  | Overriding and adapting inherited methods.                      | `open()` and `close()` methods redefined according to the popup type.       |
-| **Encapsulation** | Organization and protection of internal properties and methods. | Private methods and attributes with the `_` prefix.                         |
-| **Abstraction**   | Separation of logic into generic and specific classes.          | `Card`, `Section`, and `FormValidator` are autonomous and cohesive classes. |
-
----
-
-## 🚀 **Como Executar / How to Run**
-
-1. Clone o repositório:
+## 🚀 8. **Como Executar / How to Run**
 
 ```bash
+# 1️⃣ Clone o repositório / Clone the repository
 git clone https://github.com/Perozin/web_project_around.git
-```
 
-2. Acesse a pasta do projeto:
-
-```bash
+# 2️⃣ Acesse a pasta do projeto / Access the project folder
 cd web_project_around/src
+
+# 3️⃣ Abra o arquivo no navegador / Open the file in your browser
+index.html
 ```
 
-3. Abra o arquivo `index.html` diretamente no navegador.
-   _(Não requer servidor local para execução.)_
+💡 **Não requer servidor local — pode ser aberto diretamente no navegador.**  
+💡 **No local server required — can be opened directly in your browser.**
 
 ---
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/Perozin/web_project_around.git
-```
-
-2. Access the project folder:
-
-```bash
-cd web_project_around/src
-```
-
-3. Open the index.html file directly in the browser.
-   (Does not require a local server to run.)
-
----
-
-## 🧾 **Resumo de Atualizações / Changelog**
+## 🧾 9. **Resumo de Atualizações / Changelog**
 
 ### 🆕 Versão 2.0 — Refatoração para POO / OOP Refactor
 
-- Reestruturação completa do projeto para **Programação Orientada a Objetos**
-- Implementação das classes: `Popup`, `PopupWithForm`, `PopupWithImage`, `Card`, `Section`, `FormValidator`
-- Aplicação de **herança, polimorfismo, encapsulamento e abstração**
-- Separação modular do código JavaScript em `/components` e `/utils`
-- Migração para **estrutura de pastas mais organizada e escalável**
-- Inclusão da pasta `.vscode` com configurações personalizadas
-- Melhoria da semântica e responsividade da interface
+- 🔧 Reestruturação completa com classes e modularização
+- 🧩 Implementação de `Popup`, `Card`, `Section`, `FormValidator`
+- 🧠 Aplicação de herança, polimorfismo, encapsulamento e abstração
+- 📂 Organização de código em `/components` e `/utils`
+- 📱 Melhoria de responsividade e acessibilidade
+- 🌐 Integração com API externa (JSON Server)
 
 ---
 
-- Complete restructuring of the project for **Object-Oriented Programming**
-- Implementation of the classes: `Popup`, `PopupWithForm`, `PopupWithImage`, `Card`, `Section`, `FormValidator`
-- Application of **inheritance, polymorphism, encapsulation, and abstraction**
-- Modular separation of JavaScript code into `/components` and `/utils`
-- Migration to a **more organized and scalable folder structure**
-- Inclusion of the `.vscode` folder with custom settings
-- Improved interface semantics and responsiveness
+## 🚧 10. **Próximos Passos / Next Steps**
+
+- [ ] 🔄 Implementar persistência de dados com LocalStorage
+- [ ] 🌐 Integrar com API externa (Node.js)
+- [ ] 🔐 Adicionar autenticação e login
+- [ ] 🧩 Criar novos componentes reutilizáveis
+- [ ] 🎨 Adicionar animações em CSS
+- [ ] 🧠 Refatorar imports/exports de forma mais organizada
 
 ---
 
-## 🚧 **Próximos Passos / Next Steps**
+## 👨‍💻 **Autor / Author**
 
-- [ ] 🔄 Implementar persistência de dados via **LocalStorage**
-- [ ] 🌐 Integrar o projeto com uma **API externa** (Node.js ou JSON Server)
-- [ ] 🔐 Adicionar sistema de **autenticação e login**
-- [ ] 🧩 Criar novos componentes reutilizáveis em JavaScript
-- [ ] 🎨 Adicionar **animações suaves em CSS** para popups e interações
-- [ ] 🧠 Refatorar para o uso de **módulos ES6** com import/export organizados
+**Márcio Perusin (Perozin)**  
+Desenvolvedor Full Stack em formação — Bootcamp **TripleTen**
 
----
+🔗 [GitHub](https://github.com/Perozin)  
+🔗 [LinkedIn](https://www.linkedin.com/in/marcio-perozin)
 
-- [ ] 🔄 Implement data persistence via **LocalStorage**
-- [ ] 🌐 Integrate the project with an **external API** (Node.js or JSON Server)
-- [ ] 🔐 Add an **authentication and login** system
-- [ ] 🧩 Create new reusable JavaScript components
-- [ ] 🎨 Add **smooth CSS animations** for popups and interactions
-- [ ] 🧠 Refactor to use **ES6 modules** with organized import/export
-
----
-
-## 👨‍💻 **Créditos / Author**
-
-**Marcio Perusin**
-
-- Desenvolvedor Full-Stack (em formação) – Bootcamp TripleTen
-- GitHub: [https://github.com/Perozin](https://github.com/Perozin)
-- LinkedIn: [https://www.linkedin.com/in/marcio-perozin](https://www.linkedin.com/in/marcio-perozin)
-
-**PT-BR:** Desenvolvido por Márcio Persuin – foco em **POO, modularização e boas práticas de front-end moderno**
-**EN:** Developed by Márcio Persuin – focused on **OOP, modularization, and modern front-end best practices**
+📘 Foco em **POO, modularização e boas práticas de front-end moderno.**
 
 ---
 
 ## 📝 **Licença / License**
 
-Este projeto é de uso educacional e não possui fins comerciais.
-This project is for educational purposes only and has no commercial intent.
+📄 Este projeto é de uso educacional e sem fins comerciais.  
+📄 This project is for educational purposes only and has no commercial intent.
