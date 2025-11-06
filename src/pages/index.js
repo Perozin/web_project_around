@@ -1,111 +1,204 @@
+// -------------------- Imports --------------------
 import { Card } from "../components/Card.js";
 import { Section } from "../components/Section.js";
 import { PopupWithImage } from "../components/PopupWithImage.js";
 import { PopupWithForm } from "../components/PopupWithForm.js";
+import { PopupWithConfirmation } from "../components/PopupWithConfirmation.js";
 import { UserInfo } from "../components/UserInfo.js";
 import { FormValidator } from "../components/FormValidator.js";
+import { api } from "../components/Api.js";
 import { validationConfig } from "../utils/utils.js";
 import {
-  initialCards,
   profileEditButton,
   profileAddButton,
+  avatarEditButton,
+  profileName,
+  profileProfession,
+  profileAvatar,
   nameInput,
   jobInput,
   popupEditProfile,
   popupAddCard,
   popupImageView,
+  popupAvatarElement,
+  profileImageWrapper,
+  popupConfirmDeleteElement,
 } from "../utils/constants.js";
 
-// -------------------- Footer auto year --------------------
+// -------------------- Auto footer year --------------------
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// -------------------- Initializations --------------------
+// -------------------- Instâncias principais --------------------
 
+// User
 const userInfo = new UserInfo({
-  nameSelector: ".profile__name",
-  jobSelector: ".profile__profession",
+  nameSelector: profileName,
+  jobSelector: profileProfession,
+  avatarSelector: profileAvatar,
 });
 
-// -------------------- Validation --------------------
-
+// Validators
 const editProfileValidator = new FormValidator(
   validationConfig,
   popupEditProfile.querySelector("form")
 );
-
 editProfileValidator.enableValidation();
 
 const addCardValidator = new FormValidator(
   validationConfig,
   popupAddCard.querySelector("form")
 );
-
 addCardValidator.enableValidation();
+
+let avatarValidator = null;
+if (popupAvatarElement) {
+  avatarValidator = new FormValidator(
+    validationConfig,
+    popupAvatarElement.querySelector("form")
+  );
+  avatarValidator.enableValidation();
+}
 
 // -------------------- Popups --------------------
 
+// Popup de imagem
 const imagePopup = new PopupWithImage(popupImageView);
 imagePopup.setEventListeners();
 
+// Popup de confirmação de exclusão
+const popupConfirmDelete = new PopupWithConfirmation(
+  popupConfirmDeleteElement,
+  (cardId, cardInstance) => {
+    return api
+      .deleteCard(cardId)
+      .then(() => {
+        cardInstance.removeCard(); // remove o card do DOM
+      })
+      .catch((err) => console.error("Erro ao deletar card:", err));
+  }
+);
+popupConfirmDelete.setEventListeners();
+
+// Popup de edição de perfil
 const editProfilePopup = new PopupWithForm(
   popupEditProfile,
   (formData) => {
-    userInfo.setUserInfo({
-      name: formData["name"],
-      job: formData["activity"],
-    });
-    editProfilePopup.close();
+    return api
+      .setUserData({
+        name: formData["name"],
+        about: formData["activity"],
+      })
+      .then((userData) => {
+        userInfo.setUserInfo(userData);
+      })
+      .catch((err) => console.error("Erro ao atualizar perfil:", err));
   },
   editProfileValidator
 );
 editProfilePopup.setEventListeners();
 
+// Popup de adicionar card
 const addCardPopup = new PopupWithForm(
   popupAddCard,
   (formData) => {
-    const newCard = { name: formData["title"], link: formData["url"] };
-    const card = new Card(newCard, "#element-template", (name, link) => {
-      imagePopup.open(name, link);
-    });
-    const cardElement = card.generateCard();
-    cardSection.addItem(cardElement);
-    addCardPopup.close();
+    return api
+      .addCards({
+        name: formData["title"],
+        link: formData["url"],
+      })
+      .then((cardFromServer) => {
+        const newCard = createCard(cardFromServer);
+        cardSection.addItem(newCard);
+      })
+      .catch((err) => console.error("Erro ao adicionar card:", err));
   },
   addCardValidator
 );
 addCardPopup.setEventListeners();
 
-// -------------------- Cards section --------------------
-
-const cardSection = new Section(
-  {
-    items: initialCards,
-    renderer: (item) => {
-      const card = new Card(item, "#element-template", (name, link) => {
-        imagePopup.open(name, link);
-      });
-      const cardElement = card.generateCard();
-      cardSection.addItem(cardElement);
-    },
+// Popup de atualizar avatar
+const popupAvatar = new PopupWithForm(
+  popupAvatarElement,
+  (formData) => {
+    return api
+      .setUserAvatar({ avatar: formData["avatar"] })
+      .then((userData) => {
+        userInfo.setUserInfo(userData);
+      })
+      .catch((err) => console.error("Erro ao atualizar avatar:", err));
   },
-  ".elements__cards"
+  avatarValidator
 );
-cardSection.renderItems();
+popupAvatar.setEventListeners();
 
-// -------------------- Listeners --------------------
+// -------------------- Função para criar cards --------------------
+function createCard(item) {
+  const card = new Card(
+    item,
+    "#element-template",
+    (name, link) => imagePopup.open(name, link),
+    { userInfo, api },
+    popupConfirmDelete
+  );
 
+  return card.generateCard();
+}
+
+// -------------------- Carregamento inicial --------------------
+let cardSection = null;
+
+api
+  .getInitialData()
+  .then(([userData, initialCards]) => {
+    // Atualiza dados do usuário
+    userInfo.setUserInfo({
+      name: userData.name,
+      job: userData.about,
+      avatar: userData.avatar,
+      _id: userData._id,
+    });
+
+    // Cria seção de cards
+    cardSection = new Section(
+      {
+        items: initialCards,
+        renderer: (item) => {
+          const cardElement = createCard(item);
+          cardSection.addItem(cardElement);
+        },
+      },
+      ".elements__cards"
+    );
+
+    cardSection.renderItems();
+  })
+  .catch((error) => console.error("Erro ao obter dados iniciais:", error));
+
+// -------------------- Botões e listeners --------------------
+
+// Editar perfil
 profileEditButton.addEventListener("click", () => {
   const currentUser = userInfo.getUserInfo();
   nameInput.value = currentUser.name;
   jobInput.value = currentUser.job;
 
   editProfileValidator.resetValidation();
-
   editProfilePopup.open();
 });
 
+// Adicionar card
 profileAddButton.addEventListener("click", () => {
   addCardValidator.resetValidation();
-
   addCardPopup.open();
 });
+
+// Atualizar avatar
+if (profileImageWrapper && popupAvatar) {
+  profileImageWrapper.addEventListener("click", () => {
+    if (avatarValidator) avatarValidator.resetValidation();
+    popupAvatar.open();
+  });
+}
+
+// Botão de edição direta do avatar
+avatarEditButton.addEventListener("click", () => popupAvatar.open());

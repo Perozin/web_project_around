@@ -18,7 +18,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
 /* content */
@@ -34,7 +33,6 @@
   border: none;
   display: flex;
   flex-direction: column;
-  z-index: 1;
   position: relative;
 }
 
@@ -45,9 +43,19 @@
   flex-direction: column;
   background: transparent;
   border-radius: 0;
-  margin: 90px auto;
   padding: 0;
+  margin: 90px auto;
   position: relative;
+}
+
+.popup__content_avatar {
+  height: 272px;
+  margin: 224px auto;
+}
+
+.popup__content_confirm-delete {
+  height: 181px;
+  margin: 270px auto 269px;
 }
 
 .popup__image {
@@ -122,8 +130,13 @@
   outline: none;
   display: flex;
   flex-direction: column;
-  margin: 54px auto 0;
+  margin: 54px auto 36px;
   padding: 0;
+}
+
+.popup__form_type_confirm {
+  height: 100%;
+  margin: 38px auto 36px;
 }
 
 /* input */
@@ -145,8 +158,10 @@
   overflow: hidden;
 }
 
+/*new*/
 .popup__input_type_name,
-.popup__input_type_card-name {
+.popup__input_type_card-name,
+.popup__input_type_avatar {
   margin: 0;
   padding: 0 0 13.26px;
 }
@@ -170,17 +185,6 @@
   margin: 5px 0 0;
   padding: 0;
 }
-
-/* .popup__input-error_visible {
-  display: block;
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ff0000;
-  background-color: transparent;
-} */
 
 .popup__error_visible {
   display: block;
@@ -213,6 +217,14 @@
   margin: 48px auto 0;
   padding: 0;
 }
+
+/* new */
+.popup__button_confirm {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* new */
 
 .popup__button:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -251,6 +263,16 @@
     margin: 81px auto;
   }
 
+  .popup__content_avatar {
+    height: 244.8px;
+    margin: 201.6px auto;
+  }
+
+  .popup__content_confirm-delete {
+    height: 162.9px;
+    margin: 243px auto 242.1px;
+  }
+
   .popup__caption {
     max-width: 261.9px;
     font-size: 10.8px;
@@ -283,6 +305,10 @@
     margin: 48.6px auto 0;
   }
 
+  .popup__form_type_confirm {
+    margin: 34.2px auto 32.4px;
+  }
+
   /* input */
 
   .popup__input {
@@ -293,7 +319,8 @@
   }
 
   .popup__input_type_name,
-  .popup__input_type_card-name {
+  .popup__input_type_card-name,
+  .popup__input_type_avatar {
     margin: 0;
     padding: 0 0 11.93px;
   }
@@ -316,7 +343,7 @@
     margin: 4.5px 0 0;
   }
 
-  .popup__input-error_visible {
+  .popup__error_visible {
     font-size: 10.8px;
     line-height: 13.5px;
   }
@@ -330,6 +357,12 @@
     line-height: 19.8px;
     border-radius: 1.8px;
     margin: 43.2px auto 0;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -355,6 +388,16 @@
     max-width: 368.03px;
     max-height: 458.97px;
     margin: 76.49px auto;
+  }
+
+  .popup__content_avatar {
+    height: 231.18px;
+    margin: 190.39px auto;
+  }
+
+  .popup__content_confirm-delete {
+    height: 153.84px;
+    margin: 229.48px auto 228.63px;
   }
 
   .popup__caption {
@@ -389,6 +432,10 @@
     margin: 45.89px auto 0;
   }
 
+  .popup__form_type_confirm {
+    margin: 32.29px auto 30.59px;
+  }
+
   /* input */
 
   .popup__input {
@@ -399,7 +446,8 @@
   }
 
   .popup__input_type_name,
-  .popup__input_type_card-name {
+  .popup__input_type_card-name,
+  .popup__input_type_avatar {
     margin: 0;
     padding: 0 0 11.26px;
   }
@@ -422,7 +470,7 @@
     margin: 4.24px 0 0;
   }
 
-  .popup__input-error_visible {
+  .popup__error_visible {
     font-size: 10.19px;
     line-height: 12.74px;
   }
@@ -436,6 +484,12 @@
     font-size: 15.29px;
     line-height: 18.69px;
     margin: 40.79px auto 0;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -461,6 +515,16 @@
     max-width: 346.35px;
     max-height: 431.93px;
     margin: 71.98px auto;
+  }
+
+  .popup__content_avatar {
+    height: 217.56px;
+    margin: 179.17px auto;
+  }
+
+  .popup__content_confirm-delete {
+    height: 144.77px;
+    margin: 215.96px auto 215.16px;
   }
 
   .popup__caption {
@@ -495,6 +559,10 @@
     margin: 43.18px auto 0;
   }
 
+  .popup__form_type_confirm {
+    margin: 30.38px auto 28.78px;
+  }
+
   /* input */
 
   .popup__input {
@@ -505,7 +573,8 @@
   }
 
   .popup__input_type_name,
-  .popup__input_type_card-name {
+  .popup__input_type_card-name,
+  .popup__input_type_avatar {
     margin: 0;
     padding: 0 0 10.59px;
   }
@@ -528,7 +597,7 @@
     margin: 3.99px 0 0;
   }
 
-  .popup__input-error_visible {
+  .popup__error_visible {
     font-size: 9.58px;
     line-height: 11.98px;
   }
@@ -543,6 +612,12 @@
     line-height: 10.58px;
     margin: 38.38px auto 0;
   }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }
 
 /* -------------  896  ------------- */
@@ -552,6 +627,12 @@
 
   .popup {
     width: 70%;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -563,6 +644,12 @@
   .popup {
     width: 60%;
   }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }
 
 /* -------------  656  ------------- */
@@ -572,6 +659,12 @@
 
   .popup {
     width: 70%;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -583,6 +676,12 @@
   .popup {
     width: 80%;
   }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }
 
 /* -------------  432  ------------- */
@@ -592,6 +691,12 @@
 
   .popup {
     width: 85%;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -617,6 +722,16 @@
     max-width: 281.23px;
     max-height: 350.36px;
     margin: 136px auto 133px;
+  }
+
+  .popup__content_avatar {
+    height: 318.72px;
+    margin: 268.48px auto;
+  }
+
+  .popup__content_confirm-delete {
+    height: 139.44px;
+    margin: 208.81px auto 208.04px;
   }
   .popup__caption {
     max-width: 240px;
@@ -649,6 +764,11 @@
     margin: 89.05px auto 0;
   }
 
+  .popup__form_type_confirm {
+    height: 100%;
+    margin: 29.38px auto 27.84px;
+  }
+
   /* input */
 
   .popup__input {
@@ -657,7 +777,8 @@
   }
 
   .popup__input_type_name,
-  .popup__input_type_card-name {
+  .popup__input_type_card-name,
+  .popup__input_type_avatar {
     margin: 0;
     padding: 0 0 10.54px;
   }
@@ -680,7 +801,12 @@
     margin: 3.89px 0 0;
   }
 
-  .popup__input-error_visible {
+  /* .popup__input-error_visible {
+    font-size: 9.33px;
+    line-height: 11.68px;
+  } */
+
+  .popup__error_visible {
     font-size: 9.33px;
     line-height: 11.68px;
   }
@@ -693,6 +819,12 @@
     font-size: 16.4px;
     line-height: 19.92px;
     margin: 53.9px auto 0;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }
 
@@ -719,6 +851,16 @@
     max-width: 240px;
     max-height: 299px;
     margin: 136px auto 133px;
+  }
+
+  .popup__content_avatar {
+    height: 272px;
+    margin: 224px auto;
+  }
+
+  .popup__content_confirm-delete {
+    height: 119px;
+    margin: 178.2px auto 177.54px;
   }
 
   .popup__caption {
@@ -752,6 +894,11 @@
     margin: 76px auto 0;
   }
 
+  .popup__form_type_confirm {
+    height: 100%;
+    margin: 25.08px auto 23.76px;
+  }
+
   /* input */
 
   .popup__input {
@@ -760,7 +907,8 @@
   }
 
   .popup__input_type_name,
-  .popup__input_type_card-name {
+  .popup__input_type_card-name,
+  .popup__input_type_avatar {
     margin: 0;
     padding: 0 0 9px;
   }
@@ -783,7 +931,12 @@
     margin: 3.32px 0 0;
   }
 
-  .popup__input-error_visible {
+  /* .popup__input-error_visible {
+    font-size: 7.97px;
+    line-height: 9.97px;
+  } */
+
+  .popup__error_visible {
     font-size: 7.97px;
     line-height: 9.97px;
   }
@@ -796,5 +949,11 @@
     font-size: 14px;
     line-height: 17px;
     margin: 46px auto 0;
+  }
+
+  .popup__button_confirm {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 }

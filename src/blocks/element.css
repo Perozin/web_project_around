@@ -92,32 +92,24 @@
 /* like-button */
 
 .element__like-button {
-  max-width: 21px;
-  max-height: 19px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 21px;
+  height: 19px;
   background-color: transparent;
+  background-image: url("../images/element-like-disabled.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../images/element-like-disabled.svg");
   border: none;
-  margin: auto 3px 1px 0;
-  padding: 0;
-  opacity: 100%;
-  /* display: visible; */
+  cursor: pointer;
+  transition: opacity 0.3s;
 }
 
 .element__like-button:hover {
-  background-image: url("../images/element-like-disabled.svg");
-  opacity: 10%;
-  cursor: pointer;
+  opacity: 0.6;
 }
 
 .element__like-button_active {
   background-image: url("../images/element-like-active.svg");
-  opacity: 100%;
 }
 
 /* -------------  1152 ------------- */
@@ -157,8 +149,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 18.9px;
-    max-height: 17.1px;
+    width: 18.9px;
+    height: 17.1px;
     margin: auto 2.7px 0.9px 0;
   }
 }
@@ -200,8 +192,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 17.84px;
-    max-height: 16.14px;
+    width: 17.84px;
+    height: 16.14px;
     margin: auto 2.54px 0.84px 0;
   }
 }
@@ -243,8 +235,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 16.78px;
-    max-height: 15.18px;
+    width: 16.78px;
+    height: 15.18px;
     margin: auto 2.39px 0.79px 0;
   }
 }
@@ -286,8 +278,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 14.68px;
-    max-height: 13.28px;
+    width: 14.68px;
+    height: 13.28px;
     margin: auto 2.09px 0.69px 0;
   }
 }
@@ -330,8 +322,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 17.63px;
-    max-height: 16.5px;
+    width: 17.63px;
+    height: 16.5px;
     margin: auto 2.57px 0.84px 0;
   }
 }
@@ -373,8 +365,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 15.6px;
-    max-height: 14.1px;
+    width: 15.6px;
+    height: 14.1px;
     margin: auto 2.2px 0.72px 0;
   }
 }
@@ -424,8 +416,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 35.41px;
-    max-height: 32.05px;
+    width: 35.41px;
+    height: 32.05px;
     margin: auto 5.05px -1.67px 0;
   }
 }
@@ -467,8 +459,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 28.33px;
-    max-height: 25.64px;
+    width: 28.33px;
+    height: 25.64px;
     margin: auto 4.04px -1.34px 0;
   }
 }
@@ -512,8 +504,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 24.6px;
-    max-height: 22.26px;
+    width: 24.6px;
+    height: 22.26px;
     margin: auto 3.51px 1.17px 0;
   }
 }
@@ -557,8 +549,8 @@
   /* like-button */
 
   .element__like-button {
-    max-width: 21px;
-    max-height: 19px;
+    width: 21px;
+    height: 19px;
     margin: auto 3px 1px 0;
   }
 }

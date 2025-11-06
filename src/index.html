@@ -34,15 +34,16 @@
       <main class="content">
         <section class="profile">
           <div class="profile__image">
+            <img src="#" alt="Avatar do usuário" class="profile__elipse" />
             <img
-              src="./images/Avatar.png"
-              alt="foto do autor das viagens ao redor do mundo"
-              class="profile__elipse"
+              src="./images/Avatar_vector.png"
+              alt="ícone em formato de lápis"
+              class="profile__edit-vector"
             />
           </div>
 
           <div class="profile__info">
-            <h1 class="profile__name">Jacques Cousteau</h1>
+            <h1 class="profile__name"></h1>
             <button type="button" class="profile__edit-button">
               <img
                 src="./images/Edit-Button-Vector.png"
@@ -50,7 +51,7 @@
                 class="profile__edit-button-vector"
               />
             </button>
-            <h2 class="profile__profession">Explorador</h2>
+            <h2 class="profile__profession"></h2>
           </div>
           <button type="button" class="profile__add-button">
             <img
@@ -108,6 +109,25 @@
         </div>
       </div>
 
+      <div class="popup popup_type_avatar" id="avatar-popup">
+        <div class="popup__content popup__content_avatar">
+          <button type="button" class="popup__close-button"></button>
+          <h3 class="popup__title">Alterar a foto do perfil</h3>
+          <form class="popup__form" name="form-avatar" id="form-avatar">
+            <input
+              type="url"
+              id="avatar"
+              name="avatar"
+              class="popup__input popup__input_type_avatar"
+              placeholder="Link para a imagem"
+              required
+            />
+            <span class="popup__input-error" id="avatar-error"></span>
+            <button type="submit" class="popup__button">Salvar</button>
+          </form>
+        </div>
+      </div>
+
       <div class="popup" id="new-card-popup">
         <div class="popup__content popup__content_new-card">
           <button
@@ -138,6 +158,21 @@
             />
             <span class="popup__input-error" id="url-error"></span>
             <button type="submit" class="popup__button">Criar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup popup_type_confirm" id="confirm-delete-popup">
+        <div class="popup__content popup__content_confirm-delete">
+          <button type="button" class="popup__close-button">&times;</button>
+          <h3 class="popup__title">Tem certeza?</h3>
+          <form
+            class="popup__form popup__form_type_confirm"
+            id="confirm-delete-form"
+          >
+            <button type="submit" class="popup__button popup__button_confirm">
+              Sim
+            </button>
           </form>
         </div>
       </div>
