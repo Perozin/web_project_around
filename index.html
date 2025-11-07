@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página dedicada à informações de viagens ao redor do mundo"
+    />
+    <meta name="author" content="Marcio Perusin" />
+    <meta name="keywords" content="webpage, viagens, países, civilizações" />
+    <title>Around</title>
+    <link rel="stylesheet" href="./src/pages/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__vector">
+          <img
+            src="./images/Vector.png"
+            alt="imagem do tipo vetor para o cabeçario"
+            class="header__vector-image"
+          />
+        </div>
+
+        <img
+          src="./images/Line.png"
+          alt="linha que separa o cabeçario da container main"
+          class="header__line"
+        />
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <div class="profile__image">
+            <img src="#" alt="Avatar do usuário" class="profile__elipse" />
+            <img
+              src="./images/Avatar_vector.png"
+              alt="ícone em formato de lápis"
+              class="profile__edit-vector"
+            />
+          </div>
+
+          <div class="profile__info">
+            <h1 class="profile__name"></h1>
+            <button type="button" class="profile__edit-button">
+              <img
+                src="./images/Edit-Button-Vector.png"
+                alt="barra inclinada, funcionando como um botão vetorizado"
+                class="profile__edit-button-vector"
+              />
+            </button>
+            <h2 class="profile__profession"></h2>
+          </div>
+          <button type="button" class="profile__add-button">
+            <img
+              src="./images/Vector-add-button.png"
+              alt="sinal de adição, representando o botão adicionar"
+              class="profile__add-button-vector"
+            />
+          </button>
+        </section>
+
+        <section class="elements page__section">
+          <ul class="elements__cards"></ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">
+          &copy; <span id="year"></span> Around The U.S.
+        </p>
+      </footer>
+
+      <div class="popup" id="edit-popup">
+        <div class="popup__content popup__content_profile">
+          <button
+            type="button"
+            aria-label="Close popup"
+            class="popup__close-button"
+          ></button>
+          <h3 class="popup__title">Editar perfil</h3>
+          <form class="popup__form" id="edit-profile-form">
+            <input
+              type="text"
+              class="popup__input popup__input_type_name"
+              id="name"
+              name="name"
+              placeholder="Nome"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="popup__input-error" id="name-error"></span>
+            <input
+              type="text"
+              class="popup__input popup__input_type_activity"
+              id="activity"
+              name="activity"
+              placeholder="Sobre"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span class="popup__input-error" id="activity-error"></span>
+            <button type="submit" class="popup__button">Salvar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup popup_type_avatar" id="avatar-popup">
+        <div class="popup__content popup__content_avatar">
+          <button type="button" class="popup__close-button"></button>
+          <h3 class="popup__title">Alterar a foto do perfil</h3>
+          <form class="popup__form" name="form-avatar" id="form-avatar">
+            <input
+              type="url"
+              id="avatar"
+              name="avatar"
+              class="popup__input popup__input_type_avatar"
+              placeholder="Link para a imagem"
+              required
+            />
+            <span class="popup__input-error" id="avatar-error"></span>
+            <button type="submit" class="popup__button">Salvar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup" id="new-card-popup">
+        <div class="popup__content popup__content_new-card">
+          <button
+            type="button"
+            aria-label="Close popup"
+            class="popup__close-button"
+          ></button>
+          <h3 class="popup__title">Novo local</h3>
+          <form class="popup__form" id="new-card-form">
+            <input
+              type="text"
+              class="popup__input popup__input_type_card-name"
+              id="title"
+              name="title"
+              placeholder="Título"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span class="popup__input-error" id="title-error"></span>
+            <input
+              type="url"
+              class="popup__input popup__input_type_url"
+              id="url"
+              name="url"
+              placeholder="Link de imagem"
+              required
+            />
+            <span class="popup__input-error" id="url-error"></span>
+            <button type="submit" class="popup__button">Criar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup popup_type_confirm" id="confirm-delete-popup">
+        <div class="popup__content popup__content_confirm-delete">
+          <button type="button" class="popup__close-button">&times;</button>
+          <h3 class="popup__title">Tem certeza?</h3>
+          <form
+            class="popup__form popup__form_type_confirm"
+            id="confirm-delete-form"
+          >
+            <button type="submit" class="popup__button popup__button_confirm">
+              Sim
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup" id="image-popup">
+        <div class="popup__content popup__content_image">
+          <button
+            type="button"
+            aria-label="Close popup"
+            class="popup__close-button"
+          ></button>
+          <img src="#" alt="" class="popup__image" />
+          <p class="popup__caption"></p>
+        </div>
+      </div>
+    </div>
+
+    <template id="element-template">
+      <li class="element">
+        <img src="#" alt="" class="element__image" />
+        <button
+          aria-label="Delete card"
+          type="button"
+          class="element__delete-button"
+        ></button>
+        <div class="element__description">
+          <h2 class="element__title"></h2>
+          <button
+            aria-label="Like card"
+            type="button"
+            class="element__like-button"
+          ></button>
+        </div>
+      </li>
+    </template>
+
+    <script type="module" src="./src/pages/index.js"></script>
+  </body>
+</html>

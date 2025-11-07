@@ -1,6 +1,6 @@
 # 🌍 **web_project_around**
 
-[![Preview do projeto](./src/images/preview-around.png)](https://perozin.github.io/web_project_around/src)
+[![Preview do projeto](./src/images/preview-around.png)](https://perozin.github.io/web_project_around)
 
 > 🎯 **Clique na imagem acima para acessar o projeto publicado**  
 > 💡 **Click on the image above to access the published project**
