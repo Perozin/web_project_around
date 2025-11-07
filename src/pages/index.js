@@ -158,33 +158,9 @@ api
       _id: userData._id,
     });
 
-    // // Cria seção de cards
-    // cardSection = new Section(
-    //   {
-    //     items: initialCards,
-    //     renderer: (item) => {
-    //       const cardElement = createCard(item);
-    //       cardSection.addItem(cardElement);
-    //     },
-    //   },
-    //   ".elements__cards"
-    // );
-
-    // // Cria seção de cards
-    // cardSection = new Section(
-    //   {
-    //     items: initialCards,
-    //     renderer: (item) => {
-    //       const cardElement = createCard(item);
-    //       return cardElement; // ✅ apenas retorna o card, não adiciona aqui
-    //     },
-    //   },
-    //   ".elements__cards"
-    // );
-
     cardSection = new Section(
       {
-        items: initialCards.reverse(), // ✅ inverte a ordem recebida da API
+        items: initialCards.reverse(), // inverte a ordem recebida da API
         renderer: (item) => {
           const cardElement = createCard(item);
           return cardElement;

@@ -1,7 +1,5 @@
-// -------------------- Classe UserInfo --------------------
 export class UserInfo {
   constructor({ nameSelector, jobSelector, avatarSelector }) {
-    // Aqui, os parâmetros já são elementos DOM, então não precisa de querySelector
     this._nameElement = nameSelector;
     this._jobElement = jobSelector;
     this._avatarElement = avatarSelector;

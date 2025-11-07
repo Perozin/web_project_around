@@ -10,7 +10,7 @@ export class Section {
   renderItems() {
     this.clear();
 
-    // Agora o renderer retorna o elemento,
+    // O renderer retorna o elemento,
     // e o Section é responsável por adicioná-lo no container
     this._renderedItems.forEach((item) => {
       const element = this._renderer(item);
@@ -28,28 +28,3 @@ export class Section {
     this._container.prepend(element);
   }
 }
-
-// export class Section {
-//   constructor({ items, renderer }, containerSelector) {
-//     this._renderedItems = items;
-//     this._renderer = renderer;
-
-//     this._container = document.querySelector(containerSelector);
-//   }
-
-//   renderItems() {
-//     this.clear();
-
-//     this._renderedItems.forEach((item) => {
-//       this._renderer(item);
-//     });
-//   }
-
-//   clear() {
-//     this._container.innerHTML = "";
-//   }
-
-//   addItem(element) {
-//     this._container.prepend(element);
-//   }
-// }

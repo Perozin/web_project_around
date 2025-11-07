@@ -54,15 +54,6 @@ export class PopupWithForm extends Popup {
     }
   }
 
-  // renderLoading(isLoading, loadingText = "Salvando...") {
-  //   if (isLoading) {
-  //     this._submitButton.textContent = loadingText;
-  //     this._submitButton.disabled = true;
-  //   } else {
-  //     this._submitButton.textContent = this._defaultButtonText;
-  //     this._submitButton.disabled = false;
-  //   }
-  // }
   renderLoading(isLoading, loadingText = "Salvando...") {
     if (!this._submitButton) return;
 
