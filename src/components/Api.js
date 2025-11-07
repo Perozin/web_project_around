@@ -4,73 +4,66 @@ class Api {
     this.headers = headers;
   }
 
-  getInitialData() {
-    return Promise.all([this.getUserInfo(), this.getInitialCards()]);
+  // Método genérico que centraliza o fetch
+  _makeRequest(endpoint, method = "GET", body = null) {
+    const options = {
+      method,
+      headers: this.headers,
+    };
+
+    if (body) {
+      options.body = JSON.stringify(body);
+    }
+
+    return fetch(`${this.baseUrl}${endpoint}`, options).then((res) =>
+      this._handleServerResponse(res)
+    );
   }
 
+  // tratamento de resposta
   _handleServerResponse(res) {
     if (res.ok) return res.json();
     return Promise.reject(`Erro: ${res.status}`);
   }
 
+  // Apenas chamadas otimizadas
+  getInitialData() {
+    return Promise.all([this.getUserInfo(), this.getInitialCards()]);
+  }
+
   // Usuário
   getUserInfo() {
-    return fetch(`${this.baseUrl}/users/me`, { headers: this.headers }).then(
-      (res) => this._handleServerResponse(res)
-    );
+    return this._makeRequest("/users/me");
   }
 
   setUserData({ name, about }) {
-    return fetch(`${this.baseUrl}/users/me`, {
-      method: "PATCH",
-      headers: this.headers,
-      body: JSON.stringify({ name, about }),
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest("/users/me", "PATCH", { name, about });
   }
 
   setUserAvatar({ avatar }) {
-    return fetch(`${this.baseUrl}/users/me/avatar`, {
-      method: "PATCH",
-      headers: this.headers,
-      body: JSON.stringify({ avatar }),
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest("/users/me/avatar", "PATCH", { avatar });
   }
 
   // Cards
   getInitialCards() {
-    return fetch(`${this.baseUrl}/cards`, { headers: this.headers }).then(
-      (res) => this._handleServerResponse(res)
-    );
+    return this._makeRequest("/cards");
   }
 
   addCards({ name, link }) {
-    return fetch(`${this.baseUrl}/cards`, {
-      method: "POST",
-      headers: this.headers,
-      body: JSON.stringify({ name, link }),
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest("/cards", "POST", { name, link });
   }
 
   deleteCard(cardId) {
-    return fetch(`${this.baseUrl}/cards/${cardId}`, {
-      method: "DELETE",
-      headers: this.headers,
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest(`/cards/${cardId}`, "DELETE");
   }
 
   // Likes
   likeCard(cardId) {
-    return fetch(`${this.baseUrl}/cards/${cardId}/likes`, {
-      method: "PUT",
-      headers: this.headers,
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest(`/cards/${cardId}/likes`, "PUT");
   }
 
   dislikeCard(cardId) {
-    return fetch(`${this.baseUrl}/cards/${cardId}/likes`, {
-      method: "DELETE",
-      headers: this.headers,
-    }).then((res) => this._handleServerResponse(res));
+    return this._makeRequest(`/cards/${cardId}/likes`, "DELETE");
   }
 }
 
