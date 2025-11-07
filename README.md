@@ -1,5 +1,10 @@
 # 🌍 **web_project_around**
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![OOP](https://img.shields.io/badge/Paradigm-OOP-blue?style=for-the-badge)
+
 [![Preview do projeto](./src/images/preview-around.png)](https://perozin.github.io/web_project_around)
 
 > 🎯 **Clique na imagem acima para acessar o projeto publicado**  
@@ -47,7 +52,13 @@ It demonstrates key OOP principles such as **inheritance, polymorphism, and enca
 
 ---
 
-## ⚙️ 3. **Tecnologias e Técnicas Utilizadas / Technologies & Techniques**
+## 🎥 3. Demonstração em Vídeo / Video Demonstration
+
+🎬 [▶️ Assista ao vídeo / Watch the video](https://www.loom.com/share/9f4b63da251f47d2b03a94cfd202466b)
+
+---
+
+## ⚙️ 4. **Tecnologias e Técnicas Utilizadas / Technologies & Techniques**
 
 | Categoria / Category                      | Tecnologias e Técnicas / Technologies & Techniques                                                                |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -58,12 +69,6 @@ It demonstrates key OOP principles such as **inheritance, polymorphism, and enca
 | **Layout Responsivo / Responsive Layout** | Media Queries, Flexbox, Grid Layout                                                                               |
 | **Ambiente / Environment**                | Visual Studio Code (.vscode configurado), Git + GitHub                                                            |
 | **Boas Práticas / Best Practices**        | Modularização, Reutilização, Semântica e Escalabilidade / Modularization, Reusability, Semantics, and Scalability |
-
----
-
-## 🎥 4. **Demonstração em Vídeo / Video Demonstration**
-
-🔗 https://www.loom.com/share/9f4b63da251f47d2b03a94cfd202466b
 
 ---
 
