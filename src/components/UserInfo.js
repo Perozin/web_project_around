@@ -1,9 +1,7 @@
 // -------------------- Classe UserInfo --------------------
 export class UserInfo {
   constructor({ nameSelector, jobSelector, avatarSelector }) {
-    // this._nameElement = document.querySelector(nameSelector);
-    // this._jobElement = document.querySelector(jobSelector);
-    // this._avatarElement = document.querySelector(avatarSelector);
+    // Aqui, os parâmetros já são elementos DOM, então não precisa de querySelector
     this._nameElement = nameSelector;
     this._jobElement = jobSelector;
     this._avatarElement = avatarSelector;
@@ -17,23 +15,25 @@ export class UserInfo {
   // -------------------- Retornar dados atuais --------------------
   getUserInfo() {
     return {
-      name: this._name,
-      job: this._job,
-      avatar: this._avatar,
+      name: this._nameElement.textContent,
+      job: this._jobElement.textContent,
+      avatar: this._avatarElement.src,
       _id: this._id,
     };
   }
 
   // -------------------- Definir dados do usuário --------------------
-  setUserInfo({ name, job, avatar, _id }) {
+  setUserInfo({ name, job, about, avatar, _id }) {
+    const jobValue = job || about;
+
     if (name) {
       this._name = name;
       this._nameElement.textContent = name;
     }
 
-    if (job || job === "") {
-      this._job = job;
-      this._jobElement.textContent = job;
+    if (jobValue && jobValue !== "") {
+      this._job = jobValue;
+      this._jobElement.textContent = jobValue;
     }
 
     if (avatar) {
